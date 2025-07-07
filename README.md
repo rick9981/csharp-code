@@ -20,3 +20,8 @@ https://mp.weixin.qq.com/s/RpVAdGZID3sSYJc8NK5tAA (基础版本)
 
 https://mp.weixin.qq.com/s/HVbr1KAjtx3-zzmu7Ut2rQ
 
+## AppMergeGrid
+
+### 合并单元格噩梦！C#打造超强DataGridView，让数据展示如虎添翼
+
+https://mp.weixin.qq.com/s/tAMCzGxMgXZ8a5iRa_9Ayg
