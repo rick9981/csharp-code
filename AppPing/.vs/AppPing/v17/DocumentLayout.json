@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\myproject\\11Test\\AppPing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB86C6E-8AFE-4E4F-9001-C4FF1C927B90}|AppPing\\AppPing.csproj|d:\\myproject\\11test\\appping\\appping\\professionalpingtoolkit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB86C6E-8AFE-4E4F-9001-C4FF1C927B90}|AppPing\\AppPing.csproj|solutionrelative:appping\\professionalpingtoolkit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB86C6E-8AFE-4E4F-9001-C4FF1C927B90}|AppPing\\AppPing.csproj|d:\\myproject\\11test\\appping\\appping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB86C6E-8AFE-4E4F-9001-C4FF1C927B90}|AppPing\\AppPing.csproj|solutionrelative:appping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB86C6E-8AFE-4E4F-9001-C4FF1C927B90}|AppPing\\AppPing.csproj|d:\\myproject\\11test\\appping\\appping\\pingmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB86C6E-8AFE-4E4F-9001-C4FF1C927B90}|AppPing\\AppPing.csproj|solutionrelative:appping\\pingmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB86C6E-8AFE-4E4F-9001-C4FF1C927B90}|AppPing\\AppPing.csproj|d:\\myproject\\11test\\appping\\appping\\basicpingtool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB86C6E-8AFE-4E4F-9001-C4FF1C927B90}|AppPing\\AppPing.csproj|solutionrelative:appping\\basicpingtool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB86C6E-8AFE-4E4F-9001-C4FF1C927B90}|AppPing\\AppPing.csproj|d:\\myproject\\11test\\appping\\appping\\advancedpingtool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB86C6E-8AFE-4E4F-9001-C4FF1C927B90}|AppPing\\AppPing.csproj|solutionrelative:appping\\advancedpingtool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PingMonitor.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppPing\\AppPing\\PingMonitor.cs",
+              "RelativeDocumentMoniker": "AppPing\\PingMonitor.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppPing\\AppPing\\PingMonitor.cs",
+              "RelativeToolTip": "AppPing\\PingMonitor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T07:52:55.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BasicPingTool.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppPing\\AppPing\\BasicPingTool.cs",
+              "RelativeDocumentMoniker": "AppPing\\BasicPingTool.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppPing\\AppPing\\BasicPingTool.cs",
+              "RelativeToolTip": "AppPing\\BasicPingTool.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T07:52:54.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdvancedPingTool.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppPing\\AppPing\\AdvancedPingTool.cs",
+              "RelativeDocumentMoniker": "AppPing\\AdvancedPingTool.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppPing\\AppPing\\AdvancedPingTool.cs",
+              "RelativeToolTip": "AppPing\\AdvancedPingTool.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAkwA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T07:52:48.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppPing\\AppPing\\Program.cs",
+              "RelativeDocumentMoniker": "AppPing\\Program.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppPing\\AppPing\\Program.cs",
+              "RelativeToolTip": "AppPing\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T12:37:00.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProfessionalPingToolkit.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppPing\\AppPing\\ProfessionalPingToolkit.cs",
+              "RelativeDocumentMoniker": "AppPing\\ProfessionalPingToolkit.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppPing\\AppPing\\ProfessionalPingToolkit.cs",
+              "RelativeToolTip": "AppPing\\ProfessionalPingToolkit.cs",
+              "ViewState": "AgIAABoBAAAAAAAAAAA0wB8BAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T12:36:39.962Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

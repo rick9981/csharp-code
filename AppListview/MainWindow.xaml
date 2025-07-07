@@ -1,0 +1,33 @@
+﻿<Window x:Class="AppListview.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppListview"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <!-- ListView控件 - ItemsSource绑定到后台数据源 -->
+        <ListView Name="EmployeeListView" 
+                  ItemsSource="{Binding Employees}">
+            <ListView.View>
+                <GridView>
+                    <!-- 姓名列 - DisplayMemberBinding直接绑定到属性 -->
+                    <GridViewColumn Header="姓名" 
+                                    DisplayMemberBinding="{Binding Name}" 
+                                    Width="150"/>
+
+                    <!-- 部门列 -->
+                    <GridViewColumn Header="部门" 
+                                    DisplayMemberBinding="{Binding Department}" 
+                                    Width="120"/>
+
+                    <!-- 薪资列 - 使用StringFormat格式化显示 -->
+                    <GridViewColumn Header="薪资" 
+                                    DisplayMemberBinding="{Binding Salary, StringFormat=￥{0:N0}}" 
+                                    Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

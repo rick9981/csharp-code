@@ -1,0 +1,100 @@
+[
+  {
+    "hopNumber": 1,
+    "address": "192.168.1.1",
+    "roundTripTime": 0,
+    "status": 11013,
+    "errorMessage": null
+  },
+  {
+    "hopNumber": 2,
+    "address": "10.218.0.1",
+    "roundTripTime": 0,
+    "status": 11013,
+    "errorMessage": null
+  },
+  {
+    "hopNumber": 3,
+    "address": "0.0.0.0",
+    "roundTripTime": 0,
+    "status": 11010,
+    "errorMessage": null
+  },
+  {
+    "hopNumber": 4,
+    "address": "0.0.0.0",
+    "roundTripTime": 0,
+    "status": 11010,
+    "errorMessage": null
+  },
+  {
+    "hopNumber": 5,
+    "address": "0.0.0.0",
+    "roundTripTime": 0,
+    "status": 11010,
+    "errorMessage": null
+  },
+  {
+    "hopNumber": 6,
+    "address": "221.183.39.102",
+    "roundTripTime": 0,
+    "status": 11013,
+    "errorMessage": null
+  },
+  {
+    "hopNumber": 7,
+    "address": "221.179.171.42",
+    "roundTripTime": 0,
+    "status": 11013,
+    "errorMessage": null
+  },
+  {
+    "hopNumber": 8,
+    "address": "0.0.0.0",
+    "roundTripTime": 0,
+    "status": 11010,
+    "errorMessage": null
+  },
+  {
+    "hopNumber": 9,
+    "address": "223.71.32.98",
+    "roundTripTime": 0,
+    "status": 11013,
+    "errorMessage": null
+  },
+  {
+    "hopNumber": 10,
+    "address": "0.0.0.0",
+    "roundTripTime": 0,
+    "status": 11010,
+    "errorMessage": null
+  },
+  {
+    "hopNumber": 11,
+    "address": "0.0.0.0",
+    "roundTripTime": 0,
+    "status": 11010,
+    "errorMessage": null
+  },
+  {
+    "hopNumber": 12,
+    "address": "0.0.0.0",
+    "roundTripTime": 0,
+    "status": 11010,
+    "errorMessage": null
+  },
+  {
+    "hopNumber": 13,
+    "address": "0.0.0.0",
+    "roundTripTime": 0,
+    "status": 11010,
+    "errorMessage": null
+  },
+  {
+    "hopNumber": 14,
+    "address": "202.89.233.100",
+    "roundTripTime": 21,
+    "status": 0,
+    "errorMessage": null
+  }
+]

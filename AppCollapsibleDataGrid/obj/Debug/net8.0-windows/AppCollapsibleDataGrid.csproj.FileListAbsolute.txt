@@ -1,0 +1,17 @@
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\bin\Debug\net8.0-windows\AppCollapsibleDataGrid.exe
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\bin\Debug\net8.0-windows\AppCollapsibleDataGrid.deps.json
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\bin\Debug\net8.0-windows\AppCollapsibleDataGrid.runtimeconfig.json
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\bin\Debug\net8.0-windows\AppCollapsibleDataGrid.dll
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\bin\Debug\net8.0-windows\AppCollapsibleDataGrid.pdb
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\obj\Debug\net8.0-windows\AppCollapsibleDataGrid.CollapsibleDataGridView.resources
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\obj\Debug\net8.0-windows\AppCollapsibleDataGrid.Form1.resources
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\obj\Debug\net8.0-windows\AppCollapsibleDataGrid.csproj.GenerateResource.cache
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\obj\Debug\net8.0-windows\AppCollapsibleDataGrid.GeneratedMSBuildEditorConfig.editorconfig
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\obj\Debug\net8.0-windows\AppCollapsibleDataGrid.AssemblyInfoInputs.cache
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\obj\Debug\net8.0-windows\AppCollapsibleDataGrid.AssemblyInfo.cs
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\obj\Debug\net8.0-windows\AppCollapsibleDataGrid.csproj.CoreCompileInputs.cache
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\obj\Debug\net8.0-windows\AppCollapsibleDataGrid.dll
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\obj\Debug\net8.0-windows\refint\AppCollapsibleDataGrid.dll
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\obj\Debug\net8.0-windows\AppCollapsibleDataGrid.pdb
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\obj\Debug\net8.0-windows\AppCollapsibleDataGrid.genruntimeconfig.cache
+D:\myproject\11Test\AppDataGrid\AppCollapsibleDataGrid\obj\Debug\net8.0-windows\ref\AppCollapsibleDataGrid.dll

@@ -1,0 +1,14 @@
+D:\myproject\11Test\AppPing\AppPing\bin\Debug\net9.0\AppPing.exe
+D:\myproject\11Test\AppPing\AppPing\bin\Debug\net9.0\AppPing.deps.json
+D:\myproject\11Test\AppPing\AppPing\bin\Debug\net9.0\AppPing.runtimeconfig.json
+D:\myproject\11Test\AppPing\AppPing\bin\Debug\net9.0\AppPing.dll
+D:\myproject\11Test\AppPing\AppPing\bin\Debug\net9.0\AppPing.pdb
+D:\myproject\11Test\AppPing\AppPing\obj\Debug\net9.0\AppPing.GeneratedMSBuildEditorConfig.editorconfig
+D:\myproject\11Test\AppPing\AppPing\obj\Debug\net9.0\AppPing.AssemblyInfoInputs.cache
+D:\myproject\11Test\AppPing\AppPing\obj\Debug\net9.0\AppPing.AssemblyInfo.cs
+D:\myproject\11Test\AppPing\AppPing\obj\Debug\net9.0\AppPing.csproj.CoreCompileInputs.cache
+D:\myproject\11Test\AppPing\AppPing\obj\Debug\net9.0\AppPing.dll
+D:\myproject\11Test\AppPing\AppPing\obj\Debug\net9.0\refint\AppPing.dll
+D:\myproject\11Test\AppPing\AppPing\obj\Debug\net9.0\AppPing.pdb
+D:\myproject\11Test\AppPing\AppPing\obj\Debug\net9.0\AppPing.genruntimeconfig.cache
+D:\myproject\11Test\AppPing\AppPing\obj\Debug\net9.0\ref\AppPing.dll

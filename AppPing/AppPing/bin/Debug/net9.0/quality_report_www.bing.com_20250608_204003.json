@@ -1,0 +1,16 @@
+{
+  "hostName": "www.bing.com",
+  "testStartTime": "2025-06-08T20:38:02.7393959+08:00",
+  "testEndTime": "2025-06-08T20:40:02.4307015+08:00",
+  "totalPackets": 111,
+  "successfulPackets": 111,
+  "lostPackets": 0,
+  "packetLossPercentage": 0,
+  "minLatency": 13,
+  "maxLatency": 146,
+  "averageLatency": 26.45045045045045,
+  "latencyJitter": 22.379100102969193,
+  "latency95thPercentile": 70,
+  "latency99thPercentile": 124,
+  "qualityGrade": 5
+}
