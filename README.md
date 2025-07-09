@@ -25,3 +25,9 @@ https://mp.weixin.qq.com/s/HVbr1KAjtx3-zzmu7Ut2rQ
 ### 合并单元格噩梦！C#打造超强DataGridView，让数据展示如虎添翼
 
 https://mp.weixin.qq.com/s/tAMCzGxMgXZ8a5iRa_9Ayg
+
+## AppSqliteWAL
+
+### SQLite性能飞跃：WAL模式让并发读写效率提升300%
+
+https://mp.weixin.qq.com/s/26ucMgqkW9HcyQjgVfh2dA
