@@ -31,3 +31,9 @@ https://mp.weixin.qq.com/s/tAMCzGxMgXZ8a5iRa_9Ayg
 ### SQLite性能飞跃：WAL模式让并发读写效率提升300%
 
 https://mp.weixin.qq.com/s/26ucMgqkW9HcyQjgVfh2dA
+
+## AppSqliteWAL
+
+### WinForm DataGridView添加进度条列：让数据可视化更直观！
+
+https://mp.weixin.qq.com/s/wsj3Z-ZvriQxMfhbNojxeA
