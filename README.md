@@ -32,8 +32,14 @@ https://mp.weixin.qq.com/s/tAMCzGxMgXZ8a5iRa_9Ayg
 
 https://mp.weixin.qq.com/s/26ucMgqkW9HcyQjgVfh2dA
 
-## AppSqliteWAL
+## AppDataGridBar
 
 ### WinForm DataGridView添加进度条列：让数据可视化更直观！
 
 https://mp.weixin.qq.com/s/wsj3Z-ZvriQxMfhbNojxeA
+
+## AppVListView
+
+### C#大数据处理神器：WPF虚拟化技术让10万条数据秒开无卡顿！
+
+https://mp.weixin.qq.com/s/OW3oaxxwSjrND9_NB9c2Lw
