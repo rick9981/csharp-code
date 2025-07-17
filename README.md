@@ -43,3 +43,10 @@ https://mp.weixin.qq.com/s/wsj3Z-ZvriQxMfhbNojxeA
 ### C#大数据处理神器：WPF虚拟化技术让10万条数据秒开无卡顿！
 
 https://mp.weixin.qq.com/s/OW3oaxxwSjrND9_NB9c2Lw
+
+## AppSqlserverToMySql
+
+### 告别手工搬砖！C#实现SQL Server到MySQL数据迁移的完美解决方案
+
+https://mp.weixin.qq.com/s/gFxJOsSP9PIe_7n4U5KFIQ
+

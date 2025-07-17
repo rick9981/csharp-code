@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\myproject\\11Test\\AppSqlserverToMySql\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B43F3406-355E-41E9-9B91-6465BF74A146}|AppSqlserverToMySql\\AppSqlserverToMySql.csproj|d:\\myproject\\11test\\appsqlservertomysql\\appsqlservertomysql\\syncoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43F3406-355E-41E9-9B91-6465BF74A146}|AppSqlserverToMySql\\AppSqlserverToMySql.csproj|solutionrelative:appsqlservertomysql\\syncoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43F3406-355E-41E9-9B91-6465BF74A146}|AppSqlserverToMySql\\AppSqlserverToMySql.csproj|d:\\myproject\\11test\\appsqlservertomysql\\appsqlservertomysql\\databaseconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43F3406-355E-41E9-9B91-6465BF74A146}|AppSqlserverToMySql\\AppSqlserverToMySql.csproj|solutionrelative:appsqlservertomysql\\databaseconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43F3406-355E-41E9-9B91-6465BF74A146}|AppSqlserverToMySql\\AppSqlserverToMySql.csproj|d:\\myproject\\11test\\appsqlservertomysql\\appsqlservertomysql\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43F3406-355E-41E9-9B91-6465BF74A146}|AppSqlserverToMySql\\AppSqlserverToMySql.csproj|solutionrelative:appsqlservertomysql\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DatabaseConverter.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppSqlserverToMySql\\AppSqlserverToMySql\\DatabaseConverter.cs",
+              "RelativeDocumentMoniker": "AppSqlserverToMySql\\DatabaseConverter.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppSqlserverToMySql\\AppSqlserverToMySql\\DatabaseConverter.cs",
+              "RelativeToolTip": "AppSqlserverToMySql\\DatabaseConverter.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwPsCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:54:56.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SyncOptions.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppSqlserverToMySql\\AppSqlserverToMySql\\SyncOptions.cs",
+              "RelativeDocumentMoniker": "AppSqlserverToMySql\\SyncOptions.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppSqlserverToMySql\\AppSqlserverToMySql\\SyncOptions.cs",
+              "RelativeToolTip": "AppSqlserverToMySql\\SyncOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:51:55.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmMain.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppSqlserverToMySql\\AppSqlserverToMySql\\FrmMain.cs",
+              "RelativeDocumentMoniker": "AppSqlserverToMySql\\FrmMain.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppSqlserverToMySql\\AppSqlserverToMySql\\FrmMain.cs",
+              "RelativeToolTip": "AppSqlserverToMySql\\FrmMain.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwKMCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:49:01.693Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
