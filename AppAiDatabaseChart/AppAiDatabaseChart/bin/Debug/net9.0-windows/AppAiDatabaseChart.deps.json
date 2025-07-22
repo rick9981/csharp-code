@@ -1,0 +1,885 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "AppAiDatabaseChart/1.0.0": {
+        "dependencies": {
+          "LiveCharts.Wpf": "0.9.7",
+          "Microsoft.SemanticKernel": "1.60.0",
+          "System.Data.SQLite": "1.0.119"
+        },
+        "runtime": {
+          "AppAiDatabaseChart.dll": {}
+        }
+      },
+      "Azure.AI.OpenAI/2.2.0-beta.4": {
+        "dependencies": {
+          "Azure.Core": "1.44.1",
+          "OpenAI": "2.2.0-beta.4",
+          "System.ClientModel": "1.4.0-beta.1"
+        },
+        "runtime": {
+          "lib/net8.0/Azure.AI.OpenAI.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.200.25.16901"
+          }
+        }
+      },
+      "Azure.Core/1.44.1": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "System.ClientModel": "1.4.0-beta.1",
+          "System.Diagnostics.DiagnosticSource": "9.0.6",
+          "System.Memory.Data": "9.0.5",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Text.Encodings.Web": "6.0.0",
+          "System.Text.Json": "9.0.6",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "runtime": {
+          "lib/net6.0/Azure.Core.dll": {
+            "assemblyVersion": "1.44.1.0",
+            "fileVersion": "1.4400.124.50905"
+          }
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "System.CodeDom": "4.7.0",
+          "System.ComponentModel.Annotations": "4.7.0",
+          "System.Configuration.ConfigurationManager": "4.7.0",
+          "System.Data.SqlClient": "4.8.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/EntityFramework.SqlServer.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.400.420.21404"
+          },
+          "lib/netstandard2.1/EntityFramework.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.400.420.21404"
+          }
+        }
+      },
+      "LiveCharts/0.9.7": {
+        "runtime": {
+          "lib/net45/LiveCharts.dll": {
+            "assemblyVersion": "0.9.7.0",
+            "fileVersion": "0.9.7.0"
+          }
+        }
+      },
+      "LiveCharts.Wpf/0.9.7": {
+        "dependencies": {
+          "LiveCharts": "0.9.7"
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.Wpf.dll": {
+            "assemblyVersion": "0.9.7.0",
+            "fileVersion": "0.9.7.0"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "Microsoft.Bcl.HashCode/1.1.1": {
+        "runtime": {
+          "lib/netcoreapp2.1/Microsoft.Bcl.HashCode.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "4.700.20.56604"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
+      "Microsoft.Extensions.AI/9.6.0": {
+        "dependencies": {
+          "Microsoft.Extensions.AI.Abstractions": "9.6.0",
+          "Microsoft.Extensions.Caching.Abstractions": "9.0.6",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.6",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.6",
+          "System.Diagnostics.DiagnosticSource": "9.0.6",
+          "System.Text.Json": "9.0.6",
+          "System.Threading.Channels": "9.0.6"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.AI.dll": {
+            "assemblyVersion": "9.6.0.0",
+            "fileVersion": "9.600.25.31002"
+          }
+        }
+      },
+      "Microsoft.Extensions.AI.Abstractions/9.6.0": {
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.AI.Abstractions.dll": {
+            "assemblyVersion": "9.6.0.0",
+            "fileVersion": "9.600.25.31002"
+          }
+        }
+      },
+      "Microsoft.Extensions.AI.OpenAI/9.5.0-preview.1.25265.7": {
+        "dependencies": {
+          "Microsoft.Extensions.AI.Abstractions": "9.6.0",
+          "OpenAI": "2.2.0-beta.4",
+          "System.Memory.Data": "9.0.5",
+          "System.Text.Json": "9.0.6"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.AI.OpenAI.dll": {
+            "assemblyVersion": "9.5.0.0",
+            "fileVersion": "9.500.25.26507"
+          }
+        }
+      },
+      "Microsoft.Extensions.Caching.Abstractions/9.0.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "9.0.6"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/8.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.6"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.6": {
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/9.0.6": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.6"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/9.0.6": {
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "Microsoft.Extensions.VectorData.Abstractions/9.7.0": {
+        "dependencies": {
+          "Microsoft.Extensions.AI.Abstractions": "9.6.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.VectorData.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/3.1.0": {},
+      "Microsoft.SemanticKernel/1.60.0": {
+        "dependencies": {
+          "Microsoft.SemanticKernel.Connectors.AzureOpenAI": "1.60.0",
+          "Microsoft.SemanticKernel.Core": "1.60.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.SemanticKernel.dll": {
+            "assemblyVersion": "1.60.0.0",
+            "fileVersion": "1.60.0.0"
+          }
+        }
+      },
+      "Microsoft.SemanticKernel.Abstractions/1.60.0": {
+        "dependencies": {
+          "Microsoft.Bcl.HashCode": "1.1.1",
+          "Microsoft.Extensions.AI": "9.6.0",
+          "Microsoft.Extensions.VectorData.Abstractions": "9.7.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.SemanticKernel.Abstractions.dll": {
+            "assemblyVersion": "1.60.0.0",
+            "fileVersion": "1.60.0.0"
+          }
+        }
+      },
+      "Microsoft.SemanticKernel.Connectors.AzureOpenAI/1.60.0": {
+        "dependencies": {
+          "Azure.AI.OpenAI": "2.2.0-beta.4",
+          "Microsoft.SemanticKernel.Connectors.OpenAI": "1.60.0",
+          "Microsoft.SemanticKernel.Core": "1.60.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.SemanticKernel.Connectors.AzureOpenAI.dll": {
+            "assemblyVersion": "1.60.0.0",
+            "fileVersion": "1.60.0.0"
+          }
+        }
+      },
+      "Microsoft.SemanticKernel.Connectors.OpenAI/1.60.0": {
+        "dependencies": {
+          "Microsoft.Extensions.AI.OpenAI": "9.5.0-preview.1.25265.7",
+          "Microsoft.SemanticKernel.Core": "1.60.0",
+          "OpenAI": "2.2.0-beta.4"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.SemanticKernel.Connectors.OpenAI.dll": {
+            "assemblyVersion": "1.60.0.0",
+            "fileVersion": "1.60.0.0"
+          }
+        }
+      },
+      "Microsoft.SemanticKernel.Core/1.60.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "8.0.1",
+          "Microsoft.SemanticKernel.Abstractions": "1.60.0",
+          "System.Numerics.Tensors": "9.0.6"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.SemanticKernel.Core.dll": {
+            "assemblyVersion": "1.60.0.0",
+            "fileVersion": "1.60.0.0"
+          }
+        }
+      },
+      "Microsoft.Win32.Registry/4.7.0": {
+        "dependencies": {
+          "System.Security.AccessControl": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        }
+      },
+      "Microsoft.Win32.SystemEvents/4.7.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0"
+        }
+      },
+      "OpenAI/2.2.0-beta.4": {
+        "dependencies": {
+          "System.ClientModel": "1.4.0-beta.1",
+          "System.Diagnostics.DiagnosticSource": "9.0.6"
+        },
+        "runtime": {
+          "lib/net8.0/OpenAI.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        }
+      },
+      "runtime.native.System.Data.SqlClient.sni/4.7.0": {
+        "dependencies": {
+          "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
+          "runtime.win-x64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
+          "runtime.win-x86.runtime.native.System.Data.SqlClient.sni": "4.4.0"
+        }
+      },
+      "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/sni.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "runtimeTargets": {
+          "runtimes/win-x64/native/sni.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "runtimeTargets": {
+          "runtimes/win-x86/native/sni.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "Stub.System.Data.SQLite.Core.NetStandard/1.0.119": {
+        "runtime": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {
+            "assemblyVersion": "1.0.119.0",
+            "fileVersion": "1.0.119.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/SQLite.Interop.dll": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/SQLite.Interop.dll": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/SQLite.Interop.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "1.0.119.0"
+          },
+          "runtimes/win-x86/native/SQLite.Interop.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "1.0.119.0"
+          }
+        }
+      },
+      "System.ClientModel/1.4.0-beta.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.6",
+          "System.Memory.Data": "9.0.5"
+        },
+        "runtime": {
+          "lib/net8.0/System.ClientModel.dll": {
+            "assemblyVersion": "1.4.0.0",
+            "fileVersion": "1.400.25.15605"
+          }
+        }
+      },
+      "System.CodeDom/4.7.0": {},
+      "System.ComponentModel.Annotations/4.7.0": {},
+      "System.Configuration.ConfigurationManager/4.7.0": {
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "4.7.0",
+          "System.Security.Permissions": "4.7.0"
+        }
+      },
+      "System.Data.SqlClient/4.8.1": {
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0",
+          "runtime.native.System.Data.SqlClient.sni": "4.7.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "assemblyVersion": "4.6.1.1",
+            "fileVersion": "4.700.20.6702"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.6.1.1",
+            "fileVersion": "4.700.20.6702"
+          },
+          "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.6.1.1",
+            "fileVersion": "4.700.20.6702"
+          }
+        }
+      },
+      "System.Data.SQLite/1.0.119": {
+        "dependencies": {
+          "System.Data.SQLite.Core": "1.0.119",
+          "System.Data.SQLite.EF6": "1.0.119"
+        }
+      },
+      "System.Data.SQLite.Core/1.0.119": {
+        "dependencies": {
+          "Stub.System.Data.SQLite.Core.NetStandard": "1.0.119"
+        }
+      },
+      "System.Data.SQLite.EF6/1.0.119": {
+        "dependencies": {
+          "EntityFramework": "6.4.4"
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.Data.SQLite.EF6.dll": {
+            "assemblyVersion": "1.0.119.0",
+            "fileVersion": "1.0.119.0"
+          }
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/9.0.6": {
+        "runtime": {
+          "lib/net9.0/System.Diagnostics.DiagnosticSource.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "System.Drawing.Common/4.7.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "Microsoft.Win32.SystemEvents": "4.7.0"
+        }
+      },
+      "System.Memory.Data/9.0.5": {
+        "runtime": {
+          "lib/net9.0/System.Memory.Data.dll": {
+            "assemblyVersion": "9.0.0.5",
+            "fileVersion": "9.0.525.21509"
+          }
+        }
+      },
+      "System.Numerics.Tensors/9.0.6": {
+        "runtime": {
+          "lib/net9.0/System.Numerics.Tensors.dll": {
+            "assemblyVersion": "9.0.0.6",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {},
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "System.Security.AccessControl/4.7.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/4.7.0": {},
+      "System.Security.Permissions/4.7.0": {
+        "dependencies": {
+          "System.Security.AccessControl": "4.7.0",
+          "System.Windows.Extensions": "4.7.0"
+        }
+      },
+      "System.Security.Principal.Windows/4.7.0": {},
+      "System.Text.Encodings.Web/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        }
+      },
+      "System.Text.Json/9.0.6": {
+        "runtime": {
+          "lib/net9.0/System.Text.Json.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "System.Threading.Channels/9.0.6": {
+        "runtime": {
+          "lib/net9.0/System.Threading.Channels.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {},
+      "System.Windows.Extensions/4.7.0": {
+        "dependencies": {
+          "System.Drawing.Common": "4.7.0"
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AppAiDatabaseChart/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Azure.AI.OpenAI/2.2.0-beta.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qjCgspdq67x+urifvf7Dkz4tX5HVU3AlF2XUYU/kQBObKQihPsTYSQJ4tiMHEMNjaKRbfHzxnE2vnuhcqUUWCg==",
+      "path": "azure.ai.openai/2.2.0-beta.4",
+      "hashPath": "azure.ai.openai.2.2.0-beta.4.nupkg.sha512"
+    },
+    "Azure.Core/1.44.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YyznXLQZCregzHvioip07/BkzjuWNXogJEVz9T5W6TwjNr17ax41YGzYMptlo2G10oLCuVPoyva62y0SIRDixg==",
+      "path": "azure.core/1.44.1",
+      "hashPath": "azure.core.1.44.1.nupkg.sha512"
+    },
+    "EntityFramework/6.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yj1+/4tci7Panu3jKDHYizxwVm0Jvm7b7m057b5h4u8NUHGCR8WIWirBTw+8EptRffwftIWPBeIRGNKD1ewEMQ==",
+      "path": "entityframework/6.4.4",
+      "hashPath": "entityframework.6.4.4.nupkg.sha512"
+    },
+    "LiveCharts/0.9.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p4xyBrUaNNfkWZSNsIle0r51cyVyFg0Yi0uBRZM5GQtdFiA/7guZHlffFyNUILIdux10Ch2hUaJpcZENVU9aaQ==",
+      "path": "livecharts/0.9.7",
+      "hashPath": "livecharts.0.9.7.nupkg.sha512"
+    },
+    "LiveCharts.Wpf/0.9.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lv6YZoK0B4yWykMq5b9grZXtIbTj+OWu4sVN9GDpdgV6zffu64m4d5CW8KSjfSl9rB8VU649x1NZvhoU67hCDg==",
+      "path": "livecharts.wpf/0.9.7",
+      "hashPath": "livecharts.wpf.0.9.7.nupkg.sha512"
+    },
+    "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UcSjPsst+DfAdJGVDsu346FX0ci0ah+lw3WRtn18NUwEqRt70HaOQ7lI72vy3+1LxtqI3T5GWwV39rQSrCzAeg==",
+      "path": "microsoft.bcl.asyncinterfaces/6.0.0",
+      "hashPath": "microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Bcl.HashCode/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MalY0Y/uM/LjXtHfX/26l2VtN4LDNZ2OE3aumNOHDLsT4fNYy2hiHXI4CXCqKpNUNm7iJ2brrc4J89UdaL56FA==",
+      "path": "microsoft.bcl.hashcode/1.1.1",
+      "hashPath": "microsoft.bcl.hashcode.1.1.1.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.AI/9.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JrMdI7lKN23axyQpWLF2B1Pgzxo3+oO/1XNC90rlInlkdHnhOwqZ9vHlcZu5gZLtQPQLf6MbnWwgInm+GVuEpA==",
+      "path": "microsoft.extensions.ai/9.6.0",
+      "hashPath": "microsoft.extensions.ai.9.6.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.AI.Abstractions/9.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xGO7rHg3qK8jRdriAxIrsH4voNemCf8GVmgdcPXI5gpZ6lZWqOEM4ZO8yfYxUmg7+URw2AY1h7Uc/H17g7X1Kw==",
+      "path": "microsoft.extensions.ai.abstractions/9.6.0",
+      "hashPath": "microsoft.extensions.ai.abstractions.9.6.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.AI.OpenAI/9.5.0-preview.1.25265.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-htxD19JfZekY2vJSoMJn6lkBlZLcgMm7iK0MZc8pmuVT7FfNP7o+mTS4S0ZUDdBm1YR7NzZfYYjbwFOK/Z1gKg==",
+      "path": "microsoft.extensions.ai.openai/9.5.0-preview.1.25265.7",
+      "hashPath": "microsoft.extensions.ai.openai.9.5.0-preview.1.25265.7.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Abstractions/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bL/xQsVNrdVkzjP5yjX4ndkQ03H3+Bk3qPpl+AMCEJR2RkfgAYmoQ/xXffPV7is64+QHShnhA12YAaFmNbfM+A==",
+      "path": "microsoft.extensions.caching.abstractions/9.0.6",
+      "hashPath": "microsoft.extensions.caching.abstractions.9.0.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BmANAnR5Xd4Oqw7yQ75xOAYODybZQRzdeNucg7kS5wWKd2PNnMdYtJ2Vciy0QLylRmv42DGl5+AFL9izA6F1Rw==",
+      "path": "microsoft.extensions.dependencyinjection/8.0.1",
+      "hashPath": "microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0Zn6nR/6g+90MxskZyOOMPQvnPnrrGu6bytPwkV+azDcTtCSuQ1+GJUrg8Klmnrjk1i6zMpw2lXijl+tw7Q3kA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.6",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.9.0.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LFnyBNK7WtFmKdnHu3v0HOYQ8BcjYuy0jdC9pgCJ/rbLKoJEG9/dBzSKMEeeWDbDeoWS0TIxOC8a9CM5ufca3A==",
+      "path": "microsoft.extensions.logging.abstractions/9.0.6",
+      "hashPath": "microsoft.extensions.logging.abstractions.9.0.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BHniU24QV67qp1pJknqYSofAPYGmijGI8D+ci9yfw33iuFdyOeB9lWTg78ThyYLyQwZw3s0vZ36VMb0MqbUuLw==",
+      "path": "microsoft.extensions.primitives/9.0.6",
+      "hashPath": "microsoft.extensions.primitives.9.0.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.VectorData.Abstractions/9.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Vth/omSCX2vR0JabzSRU/hdPhr0CvUVZlaS2lJPWHrEwvak8ntrQLDtLMtMiWKSvviGBe/WmjUW8gA3qqn9tjw==",
+      "path": "microsoft.extensions.vectordata.abstractions/9.7.0",
+      "hashPath": "microsoft.extensions.vectordata.abstractions.9.7.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
+      "path": "microsoft.netcore.platforms/3.1.0",
+      "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.SemanticKernel/1.60.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zlioOIPIM7HdtIe/Dczg2rldGwqaSDpntf/z5wCiJWZLx9+ijgrODqakZYY5bHpyX9NlCAqSqr98UinncYEOMQ==",
+      "path": "microsoft.semantickernel/1.60.0",
+      "hashPath": "microsoft.semantickernel.1.60.0.nupkg.sha512"
+    },
+    "Microsoft.SemanticKernel.Abstractions/1.60.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-//jUQGgpWHf3Q9cNCsa259/j2FnSNQFrnW3fLgdEZ+aRC/C727j75GjwVlAhbsDd0K2+p+x3/bEM9jVHcNrKlw==",
+      "path": "microsoft.semantickernel.abstractions/1.60.0",
+      "hashPath": "microsoft.semantickernel.abstractions.1.60.0.nupkg.sha512"
+    },
+    "Microsoft.SemanticKernel.Connectors.AzureOpenAI/1.60.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eV9svk8LepzfN5UTgEfLYV3NReH+8oYBGlQBBextZ2w1VQnxDyV6eq3PPyuoyr0HZ7K5sUPARicXE7cQuQS1EA==",
+      "path": "microsoft.semantickernel.connectors.azureopenai/1.60.0",
+      "hashPath": "microsoft.semantickernel.connectors.azureopenai.1.60.0.nupkg.sha512"
+    },
+    "Microsoft.SemanticKernel.Connectors.OpenAI/1.60.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JtHBVzKkFDBfpzMExBvJj0nAVbBdauWrUSHFAdsvC3MJGZzRxl+glcun4tfZXKBfDWt0VXgWpklgFLdV3FzrEQ==",
+      "path": "microsoft.semantickernel.connectors.openai/1.60.0",
+      "hashPath": "microsoft.semantickernel.connectors.openai.1.60.0.nupkg.sha512"
+    },
+    "Microsoft.SemanticKernel.Core/1.60.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dE3JkvQNKYN29mTg4Fu6iwf1Ao51jrbReudqEoQhGePcsDBsjQh7YVs6PM4zwUtZzdMeKfkEF4n39HQEz86oXw==",
+      "path": "microsoft.semantickernel.core/1.60.0",
+      "hashPath": "microsoft.semantickernel.core.1.60.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.Registry/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
+      "path": "microsoft.win32.registry/4.7.0",
+      "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
+      "path": "microsoft.win32.systemevents/4.7.0",
+      "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
+    },
+    "OpenAI/2.2.0-beta.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JZ4/mlVXLaXDIZuC4Ddu0KCAA23z4Ax1AQTS26mpJRuSShjXik7DU8a3basY3ddD51W04F7jeX5eAXamKA6rHw==",
+      "path": "openai/2.2.0-beta.4",
+      "hashPath": "openai.2.2.0-beta.4.nupkg.sha512"
+    },
+    "runtime.native.System.Data.SqlClient.sni/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9kyFSIdN3T0qjDQ2R0HRXYIhS3l5psBzQi6qqhdLz+SzFyEy4sVxNOke+yyYv8Cu8rPER12c3RDjLT8wF3WBYQ==",
+      "path": "runtime.native.system.data.sqlclient.sni/4.7.0",
+      "hashPath": "runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512"
+    },
+    "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LbrynESTp3bm5O/+jGL8v0Qg5SJlTV08lpIpFesXjF6uGNMWqFnUQbYBJwZTeua6E/Y7FIM1C54Ey1btLWupdg==",
+      "path": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0",
+      "hashPath": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-38ugOfkYJqJoX9g6EYRlZB5U2ZJH51UP8ptxZgdpS07FgOEToV+lS11ouNK2PM12Pr6X/PpT5jK82G3DwH/SxQ==",
+      "path": "runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0",
+      "hashPath": "runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
+      "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
+      "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "Stub.System.Data.SQLite.Core.NetStandard/1.0.119": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dI7ngiCNgdm+n00nQvFTa+LbHvE9MIQXwMSLRzJI/KAJ7G1WmCachsvfE1CD6xvb3OXJvYYEfv3+S/LHyhN0Rg==",
+      "path": "stub.system.data.sqlite.core.netstandard/1.0.119",
+      "hashPath": "stub.system.data.sqlite.core.netstandard.1.0.119.nupkg.sha512"
+    },
+    "System.ClientModel/1.4.0-beta.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZR0fKC94VS4P80vmxjk7l13/jPBXV0GMoE4jQfkYk8m2YV+dlw8jSC+b6eAfyBz0u+soN4CjhT3OdOC5KHaXxg==",
+      "path": "system.clientmodel/1.4.0-beta.1",
+      "hashPath": "system.clientmodel.1.4.0-beta.1.nupkg.sha512"
+    },
+    "System.CodeDom/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Hs9pw/kmvH3lXaZ1LFKj3pLQsiGfj2xo3sxSzwiLlRL6UcMZUTeCfoJ9Udalvn3yq5dLlPEZzYegrTQ1/LhPOQ==",
+      "path": "system.codedom/4.7.0",
+      "hashPath": "system.codedom.4.7.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0YFqjhp/mYkDGpU0Ye1GjE53HMp9UVfGN7seGpAMttAC0C40v5gw598jCgpbBLMmCo0E5YRLBv5Z2doypO49ZQ==",
+      "path": "system.componentmodel.annotations/4.7.0",
+      "hashPath": "system.componentmodel.annotations.4.7.0.nupkg.sha512"
+    },
+    "System.Configuration.ConfigurationManager/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/anOTeSZCNNI2zDilogWrZ8pNqCmYbzGNexUnNhjW8k0sHqEZ2nHJBp147jBV3hGYswu5lINpNg1vxR7bnqvVA==",
+      "path": "system.configuration.configurationmanager/4.7.0",
+      "hashPath": "system.configuration.configurationmanager.4.7.0.nupkg.sha512"
+    },
+    "System.Data.SqlClient/4.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HKLykcv6eZLbLnSMnlQ6Os4+UAmFE+AgYm92CTvJYeTOBtOYusX3qu8OoGhFrnKZax91UcLcDo5vPrqvJUTSNQ==",
+      "path": "system.data.sqlclient/4.8.1",
+      "hashPath": "system.data.sqlclient.4.8.1.nupkg.sha512"
+    },
+    "System.Data.SQLite/1.0.119": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JSOJpnBf9goMnxGTJFGCmm6AffxgtpuXNXV5YvWO8UNC2zwd12qkUe5lAbnY+2ohIkIukgIjbvR1RA/sWILv3w==",
+      "path": "system.data.sqlite/1.0.119",
+      "hashPath": "system.data.sqlite.1.0.119.nupkg.sha512"
+    },
+    "System.Data.SQLite.Core/1.0.119": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bhQB8HVtRA+OOYw8UTD1F1kU+nGJ0/OZvH1JmlVUI4bGvgVEWeX1NcHjA765NvUoRVuCPlt8PrEpZ1thSsk1jg==",
+      "path": "system.data.sqlite.core/1.0.119",
+      "hashPath": "system.data.sqlite.core.1.0.119.nupkg.sha512"
+    },
+    "System.Data.SQLite.EF6/1.0.119": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BwwgCSeA80gsxdXtU7IQEBrN9kQXWQrD11hNYOJZbXBBI1C4r7hA4QhBAalO1nzijXikthGRUADIEMI3nlucLA==",
+      "path": "system.data.sqlite.ef6/1.0.119",
+      "hashPath": "system.data.sqlite.ef6.1.0.119.nupkg.sha512"
+    },
+    "System.Diagnostics.DiagnosticSource/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nikkwAKqpwWUvV5J8S9fnOPYg8k75Lf9fAI4bd6pyhyqNma0Py9kt+zcqXbe4TjJ4sTPcdYpPg81shYTrXnUZQ==",
+      "path": "system.diagnostics.diagnosticsource/9.0.6",
+      "hashPath": "system.diagnostics.diagnosticsource.9.0.6.nupkg.sha512"
+    },
+    "System.Drawing.Common/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
+      "path": "system.drawing.common/4.7.0",
+      "hashPath": "system.drawing.common.4.7.0.nupkg.sha512"
+    },
+    "System.Memory.Data/9.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qK9dBegf3wdw2+mqeIXmTJjlMq4sn39wUN+JSagMuCmp/05ZyQLYIZsxlCopChxcgRwqu/+tHXKRaKtzHYlITw==",
+      "path": "system.memory.data/9.0.5",
+      "hashPath": "system.memory.data.9.0.5.nupkg.sha512"
+    },
+    "System.Numerics.Tensors/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NOLvZVal7jhuhmLFNuMQnCUclSAEvemJlwjyBxoa8CeK6Oj8326bM4AqB2dcH+8FGna3X3ZtP4PCLrIScyddtA==",
+      "path": "system.numerics.tensors/9.0.6",
+      "hashPath": "system.numerics.tensors.9.0.6.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "System.Security.AccessControl/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JECvTt5aFF3WT3gHpfofL2MNNP6v84sxtXxpqhLBCcDRzqsPBmHhQ6shv4DwwN2tRlzsUxtb3G9M3763rbXKDg==",
+      "path": "system.security.accesscontrol/4.7.0",
+      "hashPath": "system.security.accesscontrol.4.7.0.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ehYW0m9ptxpGWvE4zgqongBVWpSDU/JCFD4K7krxkQwSz/sFQjEXCUqpvencjy6DYDbn7Ig09R8GFffu8TtneQ==",
+      "path": "system.security.cryptography.protecteddata/4.7.0",
+      "hashPath": "system.security.cryptography.protecteddata.4.7.0.nupkg.sha512"
+    },
+    "System.Security.Permissions/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dkOV6YYVBnYRa15/yv004eCGRBVADXw8qRbbNiCn/XpdJSUXkkUeIvdvFHkvnko4CdKMqG8yRHC4ox83LSlMsQ==",
+      "path": "system.security.permissions/4.7.0",
+      "hashPath": "system.security.permissions.4.7.0.nupkg.sha512"
+    },
+    "System.Security.Principal.Windows/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
+      "path": "system.security.principal.windows/4.7.0",
+      "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Vg8eB5Tawm1IFqj4TVK1czJX89rhFxJo9ELqc/Eiq0eXy13RK00eubyU6TJE6y+GQXjyV5gSfiewDUZjQgSE0w==",
+      "path": "system.text.encodings.web/6.0.0",
+      "hashPath": "system.text.encodings.web.6.0.0.nupkg.sha512"
+    },
+    "System.Text.Json/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h+ZtYTyTnTh5Ju6mHCKb3FPGx4ylJZgm9W7Y2psUnkhQRPMOIxX+TCN0ZgaR/+Yea+93XHWAaMzYTar1/EHIPg==",
+      "path": "system.text.json/9.0.6",
+      "hashPath": "system.text.json.9.0.6.nupkg.sha512"
+    },
+    "System.Threading.Channels/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2MaNJVkG2yJiXQbZrrcYoJ55ehV+aX0zqR6rWJkO/Qj7jTsArWthrQ7iWywUf/sE5ylJWX/iLH2kKfwSRdkWsA==",
+      "path": "system.threading.channels/9.0.6",
+      "hashPath": "system.threading.channels.9.0.6.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    },
+    "System.Windows.Extensions/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
+      "path": "system.windows.extensions/4.7.0",
+      "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    }
+  }
+}

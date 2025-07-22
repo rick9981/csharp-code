@@ -50,3 +50,14 @@ https://mp.weixin.qq.com/s/OW3oaxxwSjrND9_NB9c2Lw
 
 https://mp.weixin.qq.com/s/gFxJOsSP9PIe_7n4U5KFIQ
 
+## AppSerialPortExplained
+
+### C# SerialPort类详解：从入门到精通的完整指南
+
+https://mp.weixin.qq.com/s/oZ2nCpe1uy86yKjCBP-wpA
+
+## AppAiDatabaseChart
+
+### C# + Deepseek+ 图表可视化：打造智能SCADA数据分析系统的完整指南
+
+https://mp.weixin.qq.com/s/K7I5LJQIkb0z_OfyEAU15w

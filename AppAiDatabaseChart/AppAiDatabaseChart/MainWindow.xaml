@@ -1,0 +1,177 @@
+﻿<Window x:Class="AppAiDatabaseChart.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        Title="SCADA智能AI数据助手" Height="700" Width="1200"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
+
+    <Window.Resources>
+        <!-- 按钮样式 -->
+        <Style x:Key="ModernButton" TargetType="Button">
+            <Setter Property="Background" Value="#4A90E2"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="4">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                            VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#357ABD"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- 输入框样式 -->
+        <Style x:Key="ModernTextBox" TargetType="TextBox">
+            <Setter Property="BorderBrush" Value="#DDD"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="8"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Background" Value="White"/>
+        </Style>
+
+        <!-- 聊天气泡样式 -->
+        <Style x:Key="UserMessage" TargetType="Border">
+            <Setter Property="Background" Value="#4A90E2"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Margin" Value="50,5,10,5"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+        </Style>
+
+        <Style x:Key="AssistantMessage" TargetType="Border">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Margin" Value="10,5,50,5"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="BorderBrush" Value="#DDD"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+
+        <Style x:Key="SystemMessage" TargetType="Border">
+            <Setter Property="Background" Value="#FFF3CD"/>
+            <Setter Property="CornerRadius" Value="4"/>
+            <Setter Property="Margin" Value="10,5"/>
+            <Setter Property="Padding" Value="8"/>
+            <Setter Property="BorderBrush" Value="#FFEAA7"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+
+        <!-- 图表容器样式 -->
+        <Style x:Key="ChartContainer" TargetType="Border">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Margin" Value="10,5"/>
+            <Setter Property="Padding" Value="15"/>
+            <Setter Property="BorderBrush" Value="#DDD"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="MinHeight" Value="300"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- 左侧聊天区域 -->
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+
+            <!-- 顶部工具栏 -->
+            <Border Grid.Row="0" Background="White" BorderBrush="#DDD" BorderThickness="0,0,0,1">
+                <Grid Margin="15,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Orientation="Vertical">
+                        <TextBlock Text="SCADA智能AI数据助手" FontSize="18" FontWeight="Bold" Foreground="#333"/>
+                        <TextBlock x:Name="StatusText" Text="准备就绪" FontSize="12" Foreground="#666"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1" Orientation="Horizontal">
+                        <Button x:Name="InitDbButton" Content="🔧 初始化数据库" 
+                                Style="{StaticResource ModernButton}" Click="InitDbButton_Click"/>
+                        <Button x:Name="ShowStatsButton" Content="📊 数据统计" 
+                                Style="{StaticResource ModernButton}" Click="ShowStatsButton_Click"/>
+                        <Button x:Name="ClearChatButton" Content="🗑️ 清空对话" 
+                                Style="{StaticResource ModernButton}" Click="ClearChatButton_Click"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!-- 聊天区域 -->
+            <ScrollViewer x:Name="ChatScrollViewer" Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                <StackPanel x:Name="ChatPanel" Margin="10"/>
+            </ScrollViewer>
+
+            <!-- 输入区域 -->
+            <Border Grid.Row="2" Background="White" BorderBrush="#DDD" BorderThickness="0,1,0,0">
+                <Grid Margin="15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBox x:Name="InputTextBox" Grid.Row="0"
+                             Style="{StaticResource ModernTextBox}"
+                             TextWrapping="Wrap" AcceptsReturn="True"
+                             KeyDown="InputTextBox_KeyDown"/>
+
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,8,0,0">
+                        <TextBlock Text="Ctrl+Enter 发送" FontSize="10" Foreground="#888" 
+                                   VerticalAlignment="Center" Margin="0,0,10,0"/>
+                        <Button x:Name="SendButton" Content="发送" 
+                                Style="{StaticResource ModernButton}" Click="SendButton_Click"
+                                IsEnabled="True"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <!-- 分隔线 -->
+        <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" Background="#DDD"/>
+
+        <!-- 右侧图表区域 -->
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- 图表标题 -->
+            <Border Grid.Row="0" Background="White" BorderBrush="#DDD" BorderThickness="0,0,0,1">
+                <TextBlock x:Name="ChartTitleText" Text="📈 数据可视化" 
+                           FontSize="14" FontWeight="Bold" Foreground="#333"
+                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+
+            <!-- 图表显示区域 -->
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Background="#F9F9F9">
+                <StackPanel x:Name="ChartPanel" Margin="10"/>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Window>
