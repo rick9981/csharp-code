@@ -61,3 +61,10 @@ https://mp.weixin.qq.com/s/oZ2nCpe1uy86yKjCBP-wpA
 ### C# + Deepseek+ 图表可视化：打造智能SCADA数据分析系统的完整指南
 
 https://mp.weixin.qq.com/s/K7I5LJQIkb0z_OfyEAU15w
+
+
+## AppPortScan
+
+### C#网络编程实战：手把手教你开发专业级端口扫描器
+
+https://mp.weixin.qq.com/s/k2JU3AhmZkMGOmXA6yZ5gg
