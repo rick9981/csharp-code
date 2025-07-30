@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\myproject\\11Test\\AppModbusDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0803BCB7-E4BF-40E7-8F66-F6158BEAACD6}|AppModbusDemo\\AppModbusDemo.csproj|d:\\myproject\\11test\\appmodbusdemo\\appmodbusdemo\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0803BCB7-E4BF-40E7-8F66-F6158BEAACD6}|AppModbusDemo\\AppModbusDemo.csproj|solutionrelative:appmodbusdemo\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0803BCB7-E4BF-40E7-8F66-F6158BEAACD6}|AppModbusDemo\\AppModbusDemo.csproj|d:\\myproject\\11test\\appmodbusdemo\\appmodbusdemo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0803BCB7-E4BF-40E7-8F66-F6158BEAACD6}|AppModbusDemo\\AppModbusDemo.csproj|solutionrelative:appmodbusdemo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0803BCB7-E4BF-40E7-8F66-F6158BEAACD6}|AppModbusDemo\\AppModbusDemo.csproj|d:\\myproject\\11test\\appmodbusdemo\\appmodbusdemo\\datatypehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0803BCB7-E4BF-40E7-8F66-F6158BEAACD6}|AppModbusDemo\\AppModbusDemo.csproj|solutionrelative:appmodbusdemo\\datatypehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppModbusDemo\\AppModbusDemo\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "AppModbusDemo\\Form1.Designer.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppModbusDemo\\AppModbusDemo\\Form1.Designer.cs",
+              "RelativeToolTip": "AppModbusDemo\\Form1.Designer.cs",
+              "ViewState": "AgIAAA4DAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T10:58:07.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppModbusDemo\\AppModbusDemo\\Form1.cs",
+              "RelativeDocumentMoniker": "AppModbusDemo\\Form1.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppModbusDemo\\AppModbusDemo\\Form1.cs",
+              "RelativeToolTip": "AppModbusDemo\\Form1.cs",
+              "ViewState": "AgIAAOsCAAAAAAAAAAAwwAMDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T23:49:34.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataTypeHelper.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppModbusDemo\\AppModbusDemo\\DataTypeHelper.cs",
+              "RelativeDocumentMoniker": "AppModbusDemo\\DataTypeHelper.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppModbusDemo\\AppModbusDemo\\DataTypeHelper.cs",
+              "RelativeToolTip": "AppModbusDemo\\DataTypeHelper.cs",
+              "ViewState": "AgIAAA4BAAAAAAAAAAAIwBcBAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T23:49:16.695Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

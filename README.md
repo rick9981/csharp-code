@@ -68,3 +68,9 @@ https://mp.weixin.qq.com/s/K7I5LJQIkb0z_OfyEAU15w
 ### C#网络编程实战：手把手教你开发专业级端口扫描器
 
 https://mp.weixin.qq.com/s/k2JU3AhmZkMGOmXA6yZ5gg
+
+## AppModbusDemo
+
+### C#工业通信神器：手把手教你构建专业级Modbus客户端
+
+https://mp.weixin.qq.com/s/g_zpARBz1mmEqN4UBosVIQ
