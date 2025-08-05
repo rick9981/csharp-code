@@ -40,7 +40,7 @@ namespace AppAiDatabaseChart
                 var kernelBuilder = Kernel.CreateBuilder();
                 kernelBuilder.AddOpenAIChatCompletion(
                     modelId: "deepseek-chat",
-                    apiKey: Environment.GetEnvironmentVariable("DEEPSEEK_API_KEY") ?? "sk-xxxx",
+                    apiKey: Environment.GetEnvironmentVariable("DEEPSEEK_API_KEY") ?? "sk-183fcc943dd442c29a585c4fdb449677",
                     endpoint: new Uri("https://api.deepseek.com/v1")
                 );
                 _kernel = kernelBuilder.Build();

@@ -74,3 +74,9 @@ https://mp.weixin.qq.com/s/k2JU3AhmZkMGOmXA6yZ5gg
 ### C#工业通信神器：手把手教你构建专业级Modbus客户端
 
 https://mp.weixin.qq.com/s/g_zpARBz1mmEqN4UBosVIQ
+
+## AppModbusBatchReader
+
+### C#工业自动化必备：一键批量读取Modbus数据的高效方案
+
+https://mp.weixin.qq.com/s/V6tPAeMJhNJKEpWFGtY0HQ

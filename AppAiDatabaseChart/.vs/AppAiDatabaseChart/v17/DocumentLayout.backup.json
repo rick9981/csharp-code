@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\myproject\\11Test\\AppAiDatabaseChart\\",
+  "WorkspaceRootPath": "D:\\myproject\\18csharp-code\\AppAiDatabaseChart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0531F78F-5519-4FFF-86F0-2ABE5D6C2E0A}|AppAiDatabaseChart\\AppAiDatabaseChart.csproj|d:\\myproject\\11test\\appaidatabasechart\\appaidatabasechart\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0531F78F-5519-4FFF-86F0-2ABE5D6C2E0A}|AppAiDatabaseChart\\AppAiDatabaseChart.csproj|solutionrelative:appaidatabasechart\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{0531F78F-5519-4FFF-86F0-2ABE5D6C2E0A}|AppAiDatabaseChart\\AppAiDatabaseChart.csproj|d:\\myproject\\18csharp-code\\appaidatabasechart\\appaidatabasechart\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0531F78F-5519-4FFF-86F0-2ABE5D6C2E0A}|AppAiDatabaseChart\\AppAiDatabaseChart.csproj|solutionrelative:appaidatabasechart\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0531F78F-5519-4FFF-86F0-2ABE5D6C2E0A}|AppAiDatabaseChart\\AppAiDatabaseChart.csproj|d:\\myproject\\11test\\appaidatabasechart\\appaidatabasechart\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0531F78F-5519-4FFF-86F0-2ABE5D6C2E0A}|AppAiDatabaseChart\\AppAiDatabaseChart.csproj|solutionrelative:appaidatabasechart\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0531F78F-5519-4FFF-86F0-2ABE5D6C2E0A}|AppAiDatabaseChart\\AppAiDatabaseChart.csproj|d:\\myproject\\18csharp-code\\appaidatabasechart\\appaidatabasechart\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0531F78F-5519-4FFF-86F0-2ABE5D6C2E0A}|AppAiDatabaseChart\\AppAiDatabaseChart.csproj|solutionrelative:appaidatabasechart\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,35 +18,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\myproject\\18csharp-code\\AppAiDatabaseChart\\AppAiDatabaseChart\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AppAiDatabaseChart\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\myproject\\18csharp-code\\AppAiDatabaseChart\\AppAiDatabaseChart\\MainWindow.xaml.cs",
+              "RelativeToolTip": "AppAiDatabaseChart\\MainWindow.xaml.cs",
+              "ViewState": "AgIAADkCAAAAAAAAAAAuwEQCAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T12:46:57.803Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\myproject\\11Test\\AppAiDatabaseChart\\AppAiDatabaseChart\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\myproject\\18csharp-code\\AppAiDatabaseChart\\AppAiDatabaseChart\\MainWindow.xaml",
               "RelativeDocumentMoniker": "AppAiDatabaseChart\\MainWindow.xaml",
-              "ToolTip": "D:\\myproject\\11Test\\AppAiDatabaseChart\\AppAiDatabaseChart\\MainWindow.xaml",
+              "ToolTip": "D:\\myproject\\18csharp-code\\AppAiDatabaseChart\\AppAiDatabaseChart\\MainWindow.xaml",
               "RelativeToolTip": "AppAiDatabaseChart\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-19T09:15:23.353Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\myproject\\11Test\\AppAiDatabaseChart\\AppAiDatabaseChart\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AppAiDatabaseChart\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\myproject\\11Test\\AppAiDatabaseChart\\AppAiDatabaseChart\\MainWindow.xaml.cs",
-              "RelativeToolTip": "AppAiDatabaseChart\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAIoBAAAAAAAAAAAvwNkBAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T09:13:42.826Z",
+              "WhenOpened": "2025-07-30T12:34:50.271Z",
               "EditorCaption": ""
             }
           ]

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\myproject\\11Test\\AppAiDatabaseChart\\AppAiDatabaseChart\\AppAiDatabaseChart.csproj": {}
+    "D:\\myproject\\18csharp-code\\AppAiDatabaseChart\\AppAiDatabaseChart\\AppAiDatabaseChart.csproj": {}
   },
   "projects": {
-    "D:\\myproject\\11Test\\AppAiDatabaseChart\\AppAiDatabaseChart\\AppAiDatabaseChart.csproj": {
+    "D:\\myproject\\18csharp-code\\AppAiDatabaseChart\\AppAiDatabaseChart\\AppAiDatabaseChart.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\myproject\\11Test\\AppAiDatabaseChart\\AppAiDatabaseChart\\AppAiDatabaseChart.csproj",
+        "projectUniqueName": "D:\\myproject\\18csharp-code\\AppAiDatabaseChart\\AppAiDatabaseChart\\AppAiDatabaseChart.csproj",
         "projectName": "AppAiDatabaseChart",
-        "projectPath": "D:\\myproject\\11Test\\AppAiDatabaseChart\\AppAiDatabaseChart\\AppAiDatabaseChart.csproj",
+        "projectPath": "D:\\myproject\\18csharp-code\\AppAiDatabaseChart\\AppAiDatabaseChart\\AppAiDatabaseChart.csproj",
         "packagesPath": "C:\\Users\\truei\\.nuget\\packages\\",
-        "outputPath": "D:\\myproject\\11Test\\AppAiDatabaseChart\\AppAiDatabaseChart\\obj\\",
+        "outputPath": "D:\\myproject\\18csharp-code\\AppAiDatabaseChart\\AppAiDatabaseChart\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

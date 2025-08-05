@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\myproject\\11Test\\AppModbusBatchReader\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C84D1F0D-0949-4DA2-9C1E-98DA42E3AF2F}|AppModbusBatchReader\\AppModbusBatchReader.csproj|d:\\myproject\\11test\\appmodbusbatchreader\\appmodbusbatchreader\\modbusdatatype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C84D1F0D-0949-4DA2-9C1E-98DA42E3AF2F}|AppModbusBatchReader\\AppModbusBatchReader.csproj|solutionrelative:appmodbusbatchreader\\modbusdatatype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C84D1F0D-0949-4DA2-9C1E-98DA42E3AF2F}|AppModbusBatchReader\\AppModbusBatchReader.csproj|d:\\myproject\\11test\\appmodbusbatchreader\\appmodbusbatchreader\\modbusdatareader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C84D1F0D-0949-4DA2-9C1E-98DA42E3AF2F}|AppModbusBatchReader\\AppModbusBatchReader.csproj|solutionrelative:appmodbusbatchreader\\modbusdatareader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C84D1F0D-0949-4DA2-9C1E-98DA42E3AF2F}|AppModbusBatchReader\\AppModbusBatchReader.csproj|d:\\myproject\\11test\\appmodbusbatchreader\\appmodbusbatchreader\\modbusdataconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C84D1F0D-0949-4DA2-9C1E-98DA42E3AF2F}|AppModbusBatchReader\\AppModbusBatchReader.csproj|solutionrelative:appmodbusbatchreader\\modbusdataconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C84D1F0D-0949-4DA2-9C1E-98DA42E3AF2F}|AppModbusBatchReader\\AppModbusBatchReader.csproj|d:\\myproject\\11test\\appmodbusbatchreader\\appmodbusbatchreader\\modbusbatchreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C84D1F0D-0949-4DA2-9C1E-98DA42E3AF2F}|AppModbusBatchReader\\AppModbusBatchReader.csproj|solutionrelative:appmodbusbatchreader\\modbusbatchreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C84D1F0D-0949-4DA2-9C1E-98DA42E3AF2F}|AppModbusBatchReader\\AppModbusBatchReader.csproj|d:\\myproject\\11test\\appmodbusbatchreader\\appmodbusbatchreader\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C84D1F0D-0949-4DA2-9C1E-98DA42E3AF2F}|AppModbusBatchReader\\AppModbusBatchReader.csproj|solutionrelative:appmodbusbatchreader\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppModbusBatchReader\\AppModbusBatchReader\\Program.cs",
+              "RelativeDocumentMoniker": "AppModbusBatchReader\\Program.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppModbusBatchReader\\AppModbusBatchReader\\Program.cs",
+              "RelativeToolTip": "AppModbusBatchReader\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAcwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T11:15:33.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ModbusDataType.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppModbusBatchReader\\AppModbusBatchReader\\ModbusDataType.cs",
+              "RelativeDocumentMoniker": "AppModbusBatchReader\\ModbusDataType.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppModbusBatchReader\\AppModbusBatchReader\\ModbusDataType.cs",
+              "RelativeToolTip": "AppModbusBatchReader\\ModbusDataType.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T11:15:29.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ModbusDataReader.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppModbusBatchReader\\AppModbusBatchReader\\ModbusDataReader.cs",
+              "RelativeDocumentMoniker": "AppModbusBatchReader\\ModbusDataReader.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppModbusBatchReader\\AppModbusBatchReader\\ModbusDataReader.cs",
+              "RelativeToolTip": "AppModbusBatchReader\\ModbusDataReader.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T11:15:26.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModbusDataConverter.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppModbusBatchReader\\AppModbusBatchReader\\ModbusDataConverter.cs",
+              "RelativeDocumentMoniker": "AppModbusBatchReader\\ModbusDataConverter.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppModbusBatchReader\\AppModbusBatchReader\\ModbusDataConverter.cs",
+              "RelativeToolTip": "AppModbusBatchReader\\ModbusDataConverter.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAIwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T11:15:23.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ModbusBatchReader.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppModbusBatchReader\\AppModbusBatchReader\\ModbusBatchReader.cs",
+              "RelativeDocumentMoniker": "AppModbusBatchReader\\ModbusBatchReader.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppModbusBatchReader\\AppModbusBatchReader\\ModbusBatchReader.cs",
+              "RelativeToolTip": "AppModbusBatchReader\\ModbusBatchReader.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAcwFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T11:15:07.28Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

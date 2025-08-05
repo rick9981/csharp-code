@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppAiDatabaseChart")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f01a3f3e6fa4a67ec652fd61314d14d1c12dc1de")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppAiDatabaseChart")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppAiDatabaseChart")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
