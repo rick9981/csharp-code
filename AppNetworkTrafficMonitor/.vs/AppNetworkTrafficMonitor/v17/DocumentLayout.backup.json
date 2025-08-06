@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\myproject\\18csharp-code\\AppNetworkTrafficMonitor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D221389-7842-40C3-B60F-312CE2A673CC}|AppNetworkTrafficMonitor\\AppNetworkTrafficMonitor.csproj|d:\\myproject\\18csharp-code\\appnetworktrafficmonitor\\appnetworktrafficmonitor\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D221389-7842-40C3-B60F-312CE2A673CC}|AppNetworkTrafficMonitor\\AppNetworkTrafficMonitor.csproj|solutionrelative:appnetworktrafficmonitor\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D221389-7842-40C3-B60F-312CE2A673CC}|AppNetworkTrafficMonitor\\AppNetworkTrafficMonitor.csproj|d:\\myproject\\18csharp-code\\appnetworktrafficmonitor\\appnetworktrafficmonitor\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D221389-7842-40C3-B60F-312CE2A673CC}|AppNetworkTrafficMonitor\\AppNetworkTrafficMonitor.csproj|solutionrelative:appnetworktrafficmonitor\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D221389-7842-40C3-B60F-312CE2A673CC}|AppNetworkTrafficMonitor\\AppNetworkTrafficMonitor.csproj|D:\\myproject\\18csharp-code\\AppNetworkTrafficMonitor\\appnetworktrafficmonitor\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D221389-7842-40C3-B60F-312CE2A673CC}|AppNetworkTrafficMonitor\\AppNetworkTrafficMonitor.csproj|solutionrelative:appnetworktrafficmonitor\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\myproject\\18csharp-code\\AppNetworkTrafficMonitor\\AppNetworkTrafficMonitor\\Form1.cs",
+              "RelativeDocumentMoniker": "AppNetworkTrafficMonitor\\Form1.cs",
+              "ToolTip": "D:\\myproject\\18csharp-code\\AppNetworkTrafficMonitor\\AppNetworkTrafficMonitor\\Form1.cs",
+              "RelativeToolTip": "AppNetworkTrafficMonitor\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T12:50:16.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\myproject\\18csharp-code\\AppNetworkTrafficMonitor\\AppNetworkTrafficMonitor\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "AppNetworkTrafficMonitor\\Form1.Designer.cs",
+              "ToolTip": "D:\\myproject\\18csharp-code\\AppNetworkTrafficMonitor\\AppNetworkTrafficMonitor\\Form1.Designer.cs",
+              "RelativeToolTip": "AppNetworkTrafficMonitor\\Form1.Designer.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAlwCkAAACGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T12:45:47.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\myproject\\18csharp-code\\AppNetworkTrafficMonitor\\AppNetworkTrafficMonitor\\Form1.cs",
+              "RelativeDocumentMoniker": "AppNetworkTrafficMonitor\\Form1.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppNetworkTrafficMonitor\\AppNetworkTrafficMonitor\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\..\\11Test\\AppNetworkTrafficMonitor\\AppNetworkTrafficMonitor\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T12:45:06.777Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

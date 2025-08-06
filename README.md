@@ -80,3 +80,10 @@ https://mp.weixin.qq.com/s/g_zpARBz1mmEqN4UBosVIQ
 ### C#工业自动化必备：一键批量读取Modbus数据的高效方案
 
 https://mp.weixin.qq.com/s/V6tPAeMJhNJKEpWFGtY0HQ
+
+
+## AppNetworkTrafficMonitor
+
+### 用C#打造专业级网络流量监控工具：完整实战教程
+
+https://mp.weixin.qq.com/s/B0YqJj6vl7gcw1xa557J6g
