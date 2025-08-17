@@ -1,0 +1,16 @@
+D:\myproject\11Test\AppMotion\AppAPF\bin\Debug\net8.0-windows\AppAPF.exe
+D:\myproject\11Test\AppMotion\AppAPF\bin\Debug\net8.0-windows\AppAPF.deps.json
+D:\myproject\11Test\AppMotion\AppAPF\bin\Debug\net8.0-windows\AppAPF.runtimeconfig.json
+D:\myproject\11Test\AppMotion\AppAPF\bin\Debug\net8.0-windows\AppAPF.dll
+D:\myproject\11Test\AppMotion\AppAPF\bin\Debug\net8.0-windows\AppAPF.pdb
+D:\myproject\11Test\AppMotion\AppAPF\obj\Debug\net8.0-windows\AppAPF.Form1.resources
+D:\myproject\11Test\AppMotion\AppAPF\obj\Debug\net8.0-windows\AppAPF.csproj.GenerateResource.cache
+D:\myproject\11Test\AppMotion\AppAPF\obj\Debug\net8.0-windows\AppAPF.GeneratedMSBuildEditorConfig.editorconfig
+D:\myproject\11Test\AppMotion\AppAPF\obj\Debug\net8.0-windows\AppAPF.AssemblyInfoInputs.cache
+D:\myproject\11Test\AppMotion\AppAPF\obj\Debug\net8.0-windows\AppAPF.AssemblyInfo.cs
+D:\myproject\11Test\AppMotion\AppAPF\obj\Debug\net8.0-windows\AppAPF.csproj.CoreCompileInputs.cache
+D:\myproject\11Test\AppMotion\AppAPF\obj\Debug\net8.0-windows\AppAPF.dll
+D:\myproject\11Test\AppMotion\AppAPF\obj\Debug\net8.0-windows\refint\AppAPF.dll
+D:\myproject\11Test\AppMotion\AppAPF\obj\Debug\net8.0-windows\AppAPF.pdb
+D:\myproject\11Test\AppMotion\AppAPF\obj\Debug\net8.0-windows\AppAPF.genruntimeconfig.cache
+D:\myproject\11Test\AppMotion\AppAPF\obj\Debug\net8.0-windows\ref\AppAPF.dll

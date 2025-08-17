@@ -87,3 +87,10 @@ https://mp.weixin.qq.com/s/V6tPAeMJhNJKEpWFGtY0HQ
 ### 用C#打造专业级网络流量监控工具：完整实战教程
 
 https://mp.weixin.qq.com/s/B0YqJj6vl7gcw1xa557J6g
+
+
+## AppAPF
+
+### APF (Artificial Potential Field) 算法在 C# WinForm 中的应用
+
+https://mp.weixin.qq.com/s/ZtOAQkzOpypBJ3hLAUsmsA
