@@ -94,3 +94,10 @@ https://mp.weixin.qq.com/s/B0YqJj6vl7gcw1xa557J6g
 ### APF (Artificial Potential Field) 算法在 C# WinForm 中的应用
 
 https://mp.weixin.qq.com/s/ZtOAQkzOpypBJ3hLAUsmsA
+
+
+## AppSerialAsync
+
+### C#串口通讯实战：深入解析串口数据的艺术与技巧
+
+https://mp.weixin.qq.com/s/QMYALOqisbTEOtY1rRryJQ

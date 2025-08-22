@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "qzonx3H12hw=",
+  "success": true,
+  "projectFilePath": "D:\\myproject\\11Test\\AppSerialAsync\\AppSerialAsync\\AppSerialAsync.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.android-arm.runtime.native.system.io.ports\\9.0.8\\runtime.android-arm.runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.android-arm64.runtime.native.system.io.ports\\9.0.8\\runtime.android-arm64.runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.android-x64.runtime.native.system.io.ports\\9.0.8\\runtime.android-x64.runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.android-x86.runtime.native.system.io.ports\\9.0.8\\runtime.android-x86.runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\9.0.8\\runtime.linux-arm.runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\9.0.8\\runtime.linux-arm64.runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.linux-bionic-arm64.runtime.native.system.io.ports\\9.0.8\\runtime.linux-bionic-arm64.runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.linux-bionic-x64.runtime.native.system.io.ports\\9.0.8\\runtime.linux-bionic-x64.runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.linux-musl-arm.runtime.native.system.io.ports\\9.0.8\\runtime.linux-musl-arm.runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.linux-musl-arm64.runtime.native.system.io.ports\\9.0.8\\runtime.linux-musl-arm64.runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.linux-musl-x64.runtime.native.system.io.ports\\9.0.8\\runtime.linux-musl-x64.runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\9.0.8\\runtime.linux-x64.runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.maccatalyst-arm64.runtime.native.system.io.ports\\9.0.8\\runtime.maccatalyst-arm64.runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.maccatalyst-x64.runtime.native.system.io.ports\\9.0.8\\runtime.maccatalyst-x64.runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.native.system.io.ports\\9.0.8\\runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\9.0.8\\runtime.osx-arm64.runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\9.0.8\\runtime.osx-x64.runtime.native.system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\system.io.ports\\9.0.8\\system.io.ports.9.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
