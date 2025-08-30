@@ -101,3 +101,10 @@ https://mp.weixin.qq.com/s/ZtOAQkzOpypBJ3hLAUsmsA
 ### C#串口通讯实战：深入解析串口数据的艺术与技巧
 
 https://mp.weixin.qq.com/s/QMYALOqisbTEOtY1rRryJQ
+
+
+## AppSqliteBatchInsert
+
+### SQLite批量插入性能飞升指南：从10万条数据插入说起
+
+https://mp.weixin.qq.com/s/wuxH7vazBXkRxMPAYHZA1w
