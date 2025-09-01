@@ -1,0 +1,189 @@
+﻿<Window x:Class="AppIndustrialAop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppIndustrialAop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <Border Grid.Row="0" Background="#FF2196F3" Padding="10">
+            <TextBlock Text="🏭 工业管理系统 - ScottPlot 5.0 性能监控实战" 
+                       FontSize="20" FontWeight="Bold" Foreground="White" 
+                       HorizontalAlignment="Center"/>
+        </Border>
+
+        <TabControl Grid.Row="1" Margin="10">
+
+
+            <TabItem Header="📋 订单管理">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <GroupBox Grid.Row="0" Header="创建新订单" Margin="5">
+                        <Grid Margin="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="订单号:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding NewOrderId}" Margin="0,0,10,0"/>
+
+                            <TextBlock Grid.Row="0" Grid.Column="2" Text="客户:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                            <TextBox Grid.Row="0" Grid.Column="3" Text="{Binding NewCustomerName}" Margin="0,0,10,0"/>
+
+                            <TextBlock Grid.Row="1" Grid.Column="0" Text="产品:" VerticalAlignment="Center" Margin="0,10,10,0"/>
+                            <ComboBox Grid.Row="1" Grid.Column="1" ItemsSource="{Binding ProductOptions}" 
+                                      SelectedItem="{Binding NewProduct}" Margin="0,10,10,0"/>
+
+                            <TextBlock Grid.Row="1" Grid.Column="2" Text="数量:" VerticalAlignment="Center" Margin="0,10,10,0"/>
+                            <TextBox Grid.Row="1" Grid.Column="3" Text="{Binding NewQuantity}" Margin="0,10,10,0"/>
+
+                            <Button Grid.Row="1" Grid.Column="4" Content="创建订单" 
+                                    Click="CreateOrderButton_Click" 
+                                    Background="#FF4CAF50" Foreground="White" 
+                                    Padding="15,5" Margin="0,10,0,0"/>
+                        </Grid>
+                    </GroupBox>
+
+
+                    <DataGrid Grid.Row="1" ItemsSource="{Binding Orders}" 
+                              AutoGenerateColumns="False" Margin="5"
+                              CanUserAddRows="False" CanUserDeleteRows="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="订单号" Binding="{Binding OrderId}" Width="150"/>
+                            <DataGridTextColumn Header="客户" Binding="{Binding CustomerName}" Width="120"/>
+                            <DataGridTextColumn Header="产品" Binding="{Binding Product}" Width="100"/>
+                            <DataGridTextColumn Header="数量" Binding="{Binding Quantity}" Width="80"/>
+                            <DataGridTextColumn Header="下单时间" Binding="{Binding OrderTime, StringFormat=yyyy-MM-dd HH:mm:ss}" Width="150"/>
+                            <DataGridTextColumn Header="状态" Binding="{Binding Status}" Width="100"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="⚙️ 生产调度">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Button Grid.Row="0" Content="刷新调度" Click="RefreshButton_Click" 
+                            HorizontalAlignment="Right" Margin="5" Padding="10,5"
+                            Background="#FF2196F3" Foreground="White"/>
+
+                    <DataGrid Grid.Row="1" ItemsSource="{Binding Schedules}" 
+                              AutoGenerateColumns="False" Margin="5"
+                              CanUserAddRows="False" CanUserDeleteRows="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="调度ID" Binding="{Binding ScheduleId}" Width="120"/>
+                            <DataGridTextColumn Header="订单号" Binding="{Binding OrderId}" Width="150"/>
+                            <DataGridTextColumn Header="设备" Binding="{Binding Equipment}" Width="150"/>
+                            <DataGridTextColumn Header="开始时间" Binding="{Binding StartTime, StringFormat=yyyy-MM-dd HH:mm:ss}" Width="150"/>
+                            <DataGridTextColumn Header="结束时间" Binding="{Binding EndTime, StringFormat=yyyy-MM-dd HH:mm:ss}" Width="150"/>
+                            <DataGridTextColumn Header="预计时长(小时)" Binding="{Binding EstimatedDuration}" Width="120"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="📊 性能监控图表">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <GroupBox Grid.Row="0" Grid.Column="0" Header="实时响应时间" Margin="5">
+                        <Border x:Name="ResponseTimeChartContainer" />
+                    </GroupBox>
+
+
+                    <GroupBox Grid.Row="0" Grid.Column="1" Header="方法性能统计" Margin="5">
+                        <Border x:Name="MethodStatsChartContainer" />
+                    </GroupBox>
+
+                    <GroupBox Grid.Row="1" Grid.Column="0" Header="请求计数" Margin="5">
+                        <Border x:Name="RequestCountChartContainer" />
+                    </GroupBox>
+
+                    <GroupBox Grid.Row="1" Grid.Column="1" Header="性能记录" Margin="5">
+                        <DataGrid ItemsSource="{Binding PerformanceRecords}" 
+                                  AutoGenerateColumns="False"
+                                  CanUserAddRows="False" CanUserDeleteRows="False">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="方法名" Binding="{Binding MethodName}" Width="150"/>
+                                <DataGridTextColumn Header="时间(ms)" Binding="{Binding ElapsedMilliseconds}" Width="80"/>
+                                <DataGridTextColumn Header="状态" Binding="{Binding Status}" Width="60">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Style.Triggers>
+                                                <Trigger Property="Text" Value="警告">
+                                                    <Setter Property="Foreground" Value="Red"/>
+                                                    <Setter Property="FontWeight" Value="Bold"/>
+                                                </Trigger>
+                                                <Trigger Property="Text" Value="正常">
+                                                    <Setter Property="Foreground" Value="Green"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="📋 性能数据">
+                <DataGrid ItemsSource="{Binding PerformanceRecords}" 
+                          AutoGenerateColumns="False" Margin="5"
+                          CanUserAddRows="False" CanUserDeleteRows="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="方法名" Binding="{Binding MethodName}" Width="250"/>
+                        <DataGridTextColumn Header="执行时间(ms)" Binding="{Binding ElapsedMilliseconds}" Width="120"/>
+                        <DataGridTextColumn Header="时间戳" Binding="{Binding Timestamp, StringFormat=yyyy-MM-dd HH:mm:ss}" Width="150"/>
+                        <DataGridTextColumn Header="状态" Binding="{Binding Status}" Width="80">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Style.Triggers>
+                                        <Trigger Property="Text" Value="警告">
+                                            <Setter Property="Foreground" Value="Red"/>
+                                            <Setter Property="FontWeight" Value="Bold"/>
+                                        </Trigger>
+                                        <Trigger Property="Text" Value="正常">
+                                            <Setter Property="Foreground" Value="Green"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

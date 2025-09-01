@@ -108,3 +108,11 @@ https://mp.weixin.qq.com/s/QMYALOqisbTEOtY1rRryJQ
 ### SQLite批量插入性能飞升指南：从10万条数据插入说起
 
 https://mp.weixin.qq.com/s/wuxH7vazBXkRxMPAYHZA1w
+
+
+
+## AppIndustrialAop
+
+### C#性能监控实战：工业系统中的WPF+AOP+Castle.DynamicProxy完美组合
+
+https://mp.weixin.qq.com/s/Gpu1I9eIcjNUL4FR0WZtPQ
