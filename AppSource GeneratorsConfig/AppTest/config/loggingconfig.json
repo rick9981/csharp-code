@@ -1,0 +1,8 @@
+{
+    "Logging": {
+        "level": "Debug",
+        "enableFileLogging": true,
+        "logPath": "logs/myapp.log",
+        "maxFileSizeMB": 50
+    }
+}

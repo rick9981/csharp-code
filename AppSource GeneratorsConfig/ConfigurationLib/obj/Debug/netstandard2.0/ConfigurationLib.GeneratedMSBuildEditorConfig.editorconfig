@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = ConfigurationLib
+build_property.ProjectDir = D:\myproject\11Test\AppSource GeneratorsConfig\ConfigurationLib\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

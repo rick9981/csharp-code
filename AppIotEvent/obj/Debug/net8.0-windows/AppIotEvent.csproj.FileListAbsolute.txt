@@ -1,0 +1,17 @@
+D:\myproject\11Test\AppIotEvent\AppIotEvent\obj\Debug\net8.0-windows\AppIotEvent.Forms.FrmDeviceControl.resources
+D:\myproject\11Test\AppIotEvent\AppIotEvent\obj\Debug\net8.0-windows\AppIotEvent.Forms.FrmMain.resources
+D:\myproject\11Test\AppIotEvent\AppIotEvent\obj\Debug\net8.0-windows\AppIotEvent.csproj.GenerateResource.cache
+D:\myproject\11Test\AppIotEvent\AppIotEvent\obj\Debug\net8.0-windows\AppIotEvent.GeneratedMSBuildEditorConfig.editorconfig
+D:\myproject\11Test\AppIotEvent\AppIotEvent\obj\Debug\net8.0-windows\AppIotEvent.AssemblyInfoInputs.cache
+D:\myproject\11Test\AppIotEvent\AppIotEvent\obj\Debug\net8.0-windows\AppIotEvent.AssemblyInfo.cs
+D:\myproject\11Test\AppIotEvent\AppIotEvent\obj\Debug\net8.0-windows\AppIotEvent.csproj.CoreCompileInputs.cache
+D:\myproject\11Test\AppIotEvent\AppIotEvent\bin\Debug\net8.0-windows\AppIotEvent.exe
+D:\myproject\11Test\AppIotEvent\AppIotEvent\bin\Debug\net8.0-windows\AppIotEvent.deps.json
+D:\myproject\11Test\AppIotEvent\AppIotEvent\bin\Debug\net8.0-windows\AppIotEvent.runtimeconfig.json
+D:\myproject\11Test\AppIotEvent\AppIotEvent\bin\Debug\net8.0-windows\AppIotEvent.dll
+D:\myproject\11Test\AppIotEvent\AppIotEvent\bin\Debug\net8.0-windows\AppIotEvent.pdb
+D:\myproject\11Test\AppIotEvent\AppIotEvent\obj\Debug\net8.0-windows\AppIotEvent.dll
+D:\myproject\11Test\AppIotEvent\AppIotEvent\obj\Debug\net8.0-windows\refint\AppIotEvent.dll
+D:\myproject\11Test\AppIotEvent\AppIotEvent\obj\Debug\net8.0-windows\AppIotEvent.pdb
+D:\myproject\11Test\AppIotEvent\AppIotEvent\obj\Debug\net8.0-windows\AppIotEvent.genruntimeconfig.cache
+D:\myproject\11Test\AppIotEvent\AppIotEvent\obj\Debug\net8.0-windows\ref\AppIotEvent.dll

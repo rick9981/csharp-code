@@ -1,0 +1,8 @@
+{
+    "Database": {
+        "connectionString": "Server=localhost;Database=MyApp;Integrated Security=true;",
+        "timeout": 60,
+        "enableRetry": true,
+        "maxRetryCount": 5
+    }
+}

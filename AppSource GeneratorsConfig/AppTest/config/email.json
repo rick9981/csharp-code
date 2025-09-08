@@ -1,0 +1,12 @@
+{
+    "Email": {
+        "host": "smtp.163.com",
+        "port": 465,
+        "enableSsl": true,
+        "defaultFromEmail": "wl9981@163.com",
+        "defaultToEmail": "2125877@qq.com",
+        "userName": "wl9981@163.com",
+        "password": "",
+        "defaultFromName": "开发平台"
+    }
+}

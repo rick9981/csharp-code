@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\myproject\\11Test\\AppSource GeneratorsConfig\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{008FC319-28CE-4570-BE61-913A58DFA8FA}|AppTest\\AppTest.csproj|d:\\myproject\\11test\\appsource generatorsconfig\\apptest\\config\\loggingconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{008FC319-28CE-4570-BE61-913A58DFA8FA}|AppTest\\AppTest.csproj|solutionrelative:apptest\\config\\loggingconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008FC319-28CE-4570-BE61-913A58DFA8FA}|AppTest\\AppTest.csproj|d:\\myproject\\11test\\appsource generatorsconfig\\apptest\\config\\features.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{008FC319-28CE-4570-BE61-913A58DFA8FA}|AppTest\\AppTest.csproj|solutionrelative:apptest\\config\\features.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "loggingconfig.json",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppSource GeneratorsConfig\\AppTest\\config\\loggingconfig.json",
+              "RelativeDocumentMoniker": "AppTest\\config\\loggingconfig.json",
+              "ToolTip": "D:\\myproject\\11Test\\AppSource GeneratorsConfig\\AppTest\\config\\loggingconfig.json",
+              "RelativeToolTip": "AppTest\\config\\loggingconfig.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-03T23:45:39.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "features.json",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppSource GeneratorsConfig\\AppTest\\config\\features.json",
+              "RelativeDocumentMoniker": "AppTest\\config\\features.json",
+              "ToolTip": "D:\\myproject\\11Test\\AppSource GeneratorsConfig\\AppTest\\config\\features.json",
+              "RelativeToolTip": "AppTest\\config\\features.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-03T23:45:31.47Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

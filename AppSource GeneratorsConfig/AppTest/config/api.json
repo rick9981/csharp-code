@@ -1,0 +1,10 @@
+{
+    "baseUrl": "https://api.example.com",
+    "apiKey": "your-api-key-here",
+    "timeout": 10000,
+    "endpoints": [
+        "/users",
+        "/products",
+        "/orders"
+    ]
+}

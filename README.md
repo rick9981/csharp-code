@@ -116,3 +116,25 @@ https://mp.weixin.qq.com/s/wuxH7vazBXkRxMPAYHZA1w
 ### C#性能监控实战：工业系统中的WPF+AOP+Castle.DynamicProxy完美组合
 
 https://mp.weixin.qq.com/s/Gpu1I9eIcjNUL4FR0WZtPQ
+
+
+## AppIotEvent
+
+### C#事件驱动架构实战：打造企业级IoT监控系统
+
+https://mp.weixin.qq.com/s/LZKOUw95SNLshvFewbOIzg
+
+
+## AppMemory
+
+### C# SQL Server 内存数据库与 ScottPlot 实时监控数据
+
+
+https://mp.weixin.qq.com/s/hvdcNiSKSWqQc4vn23qwaw
+
+
+## AppSource GeneratorsConfig
+
+### 告别配置文件地狱！C#源代码生成器打造自动化配置管理神器
+
+https://mp.weixin.qq.com/s/iAFs_x0hrbHLnO6g0GKhmg

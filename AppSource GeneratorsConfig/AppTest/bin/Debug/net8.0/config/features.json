@@ -1,0 +1,13 @@
+{
+    "flags": {
+        "EnableNewFeature": true,
+        "EnableBetaFeatures": false,
+        "FeatureExpiryDate": "2024-12-31T23:59:59Z"
+    },
+    "enableExperimentalFeatures": true,
+    "experimentalFeaturesList": [
+        "NewUI",
+        "EnhancedSearch",
+        "AIIntegration"
+    ]
+}

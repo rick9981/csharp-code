@@ -1,0 +1,10 @@
+D:\myproject\11Test\AppSource GeneratorsConfig\ConfigurationLib\bin\Debug\netstandard2.0\ConfigurationLib.deps.json
+D:\myproject\11Test\AppSource GeneratorsConfig\ConfigurationLib\bin\Debug\netstandard2.0\ConfigurationLib.dll
+D:\myproject\11Test\AppSource GeneratorsConfig\ConfigurationLib\bin\Debug\netstandard2.0\ConfigurationLib.pdb
+D:\myproject\11Test\AppSource GeneratorsConfig\ConfigurationLib\obj\Debug\netstandard2.0\ConfigurationLib.csproj.AssemblyReference.cache
+D:\myproject\11Test\AppSource GeneratorsConfig\ConfigurationLib\obj\Debug\netstandard2.0\ConfigurationLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\myproject\11Test\AppSource GeneratorsConfig\ConfigurationLib\obj\Debug\netstandard2.0\ConfigurationLib.AssemblyInfoInputs.cache
+D:\myproject\11Test\AppSource GeneratorsConfig\ConfigurationLib\obj\Debug\netstandard2.0\ConfigurationLib.AssemblyInfo.cs
+D:\myproject\11Test\AppSource GeneratorsConfig\ConfigurationLib\obj\Debug\netstandard2.0\ConfigurationLib.csproj.CoreCompileInputs.cache
+D:\myproject\11Test\AppSource GeneratorsConfig\ConfigurationLib\obj\Debug\netstandard2.0\ConfigurationLib.dll
+D:\myproject\11Test\AppSource GeneratorsConfig\ConfigurationLib\obj\Debug\netstandard2.0\ConfigurationLib.pdb
