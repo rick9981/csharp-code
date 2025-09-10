@@ -138,3 +138,17 @@ https://mp.weixin.qq.com/s/hvdcNiSKSWqQc4vn23qwaw
 ### 告别配置文件地狱！C#源代码生成器打造自动化配置管理神器
 
 https://mp.weixin.qq.com/s/iAFs_x0hrbHLnO6g0GKhmg
+
+
+## AppWinStyle1
+
+### C#高颜值系统界面：从零搭建现代化WinForms应用
+
+https://mp.weixin.qq.com/s/Yzks6QKQGYKoRv6VCm-p9A
+
+## AppKepTool
+
+### C#工业自动化神器：手把手教你开发Kepware配置管理工具
+
+
+https://mp.weixin.qq.com/s/0lWDEnS86AstUqKaxszKKA

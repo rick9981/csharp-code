@@ -1,0 +1,16 @@
+D:\myproject\11Test\AppWinStyle1\AppWinStyle1\bin\Debug\net8.0-windows\AppWinStyle1.exe
+D:\myproject\11Test\AppWinStyle1\AppWinStyle1\bin\Debug\net8.0-windows\AppWinStyle1.deps.json
+D:\myproject\11Test\AppWinStyle1\AppWinStyle1\bin\Debug\net8.0-windows\AppWinStyle1.runtimeconfig.json
+D:\myproject\11Test\AppWinStyle1\AppWinStyle1\bin\Debug\net8.0-windows\AppWinStyle1.dll
+D:\myproject\11Test\AppWinStyle1\AppWinStyle1\bin\Debug\net8.0-windows\AppWinStyle1.pdb
+D:\myproject\11Test\AppWinStyle1\AppWinStyle1\obj\Debug\net8.0-windows\AppWinStyle1.GeneratedMSBuildEditorConfig.editorconfig
+D:\myproject\11Test\AppWinStyle1\AppWinStyle1\obj\Debug\net8.0-windows\AppWinStyle1.AssemblyInfoInputs.cache
+D:\myproject\11Test\AppWinStyle1\AppWinStyle1\obj\Debug\net8.0-windows\AppWinStyle1.AssemblyInfo.cs
+D:\myproject\11Test\AppWinStyle1\AppWinStyle1\obj\Debug\net8.0-windows\AppWinStyle1.csproj.CoreCompileInputs.cache
+D:\myproject\11Test\AppWinStyle1\AppWinStyle1\obj\Debug\net8.0-windows\AppWinStyle1.dll
+D:\myproject\11Test\AppWinStyle1\AppWinStyle1\obj\Debug\net8.0-windows\refint\AppWinStyle1.dll
+D:\myproject\11Test\AppWinStyle1\AppWinStyle1\obj\Debug\net8.0-windows\AppWinStyle1.pdb
+D:\myproject\11Test\AppWinStyle1\AppWinStyle1\obj\Debug\net8.0-windows\AppWinStyle1.genruntimeconfig.cache
+D:\myproject\11Test\AppWinStyle1\AppWinStyle1\obj\Debug\net8.0-windows\ref\AppWinStyle1.dll
+D:\myproject\11Test\AppWinStyle1\AppWinStyle1\obj\Debug\net8.0-windows\AppWinStyle1.Form1.resources
+D:\myproject\11Test\AppWinStyle1\AppWinStyle1\obj\Debug\net8.0-windows\AppWinStyle1.csproj.GenerateResource.cache
