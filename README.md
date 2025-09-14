@@ -152,3 +152,10 @@ https://mp.weixin.qq.com/s/Yzks6QKQGYKoRv6VCm-p9A
 
 
 https://mp.weixin.qq.com/s/0lWDEnS86AstUqKaxszKKA
+
+## AppSerialPortBuffer
+
+### C#串口通信完全指南：从连接到数据传输的最佳实践
+
+
+https://mp.weixin.qq.com/s/0HuUlrTaV1YuUAjw2WJIMw
