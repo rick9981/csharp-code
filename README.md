@@ -159,3 +159,10 @@ https://mp.weixin.qq.com/s/0lWDEnS86AstUqKaxszKKA
 
 
 https://mp.weixin.qq.com/s/0HuUlrTaV1YuUAjw2WJIMw
+
+## AppEdgeCollector
+
+### .NET工作服务实战：打造高性能边缘采集系统
+
+
+https://mp.weixin.qq.com/s/bX5y9jK0bIj-Cl3uwfwWaA

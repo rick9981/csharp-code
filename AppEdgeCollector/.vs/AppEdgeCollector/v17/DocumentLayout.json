@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\myproject\\11Test\\AppEdgeCollector\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0E162D-683B-461E-A1B1-938C18DEFC96}|AppEdgeCollector\\AppEdgeCollector.csproj|d:\\myproject\\11test\\appedgecollector\\appedgecollector\\appedgecollector.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2A0E162D-683B-461E-A1B1-938C18DEFC96}|AppEdgeCollector\\AppEdgeCollector.csproj|solutionrelative:appedgecollector\\appedgecollector.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0E162D-683B-461E-A1B1-938C18DEFC96}|AppEdgeCollector\\AppEdgeCollector.csproj|d:\\myproject\\11test\\appedgecollector\\appedgecollector\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A0E162D-683B-461E-A1B1-938C18DEFC96}|AppEdgeCollector\\AppEdgeCollector.csproj|solutionrelative:appedgecollector\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0E162D-683B-461E-A1B1-938C18DEFC96}|AppEdgeCollector\\AppEdgeCollector.csproj|d:\\myproject\\11test\\appedgecollector\\appedgecollector\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A0E162D-683B-461E-A1B1-938C18DEFC96}|AppEdgeCollector\\AppEdgeCollector.csproj|solutionrelative:appedgecollector\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0E162D-683B-461E-A1B1-938C18DEFC96}|AppEdgeCollector\\AppEdgeCollector.csproj|d:\\myproject\\11test\\appedgecollector\\appedgecollector\\services\\pollingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A0E162D-683B-461E-A1B1-938C18DEFC96}|AppEdgeCollector\\AppEdgeCollector.csproj|solutionrelative:appedgecollector\\services\\pollingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0E162D-683B-461E-A1B1-938C18DEFC96}|AppEdgeCollector\\AppEdgeCollector.csproj|d:\\myproject\\11test\\appedgecollector\\appedgecollector\\services\\shorttermbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A0E162D-683B-461E-A1B1-938C18DEFC96}|AppEdgeCollector\\AppEdgeCollector.csproj|solutionrelative:appedgecollector\\services\\shorttermbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0E162D-683B-461E-A1B1-938C18DEFC96}|AppEdgeCollector\\AppEdgeCollector.csproj|d:\\myproject\\11test\\appedgecollector\\appedgecollector\\utils\\pollypolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A0E162D-683B-461E-A1B1-938C18DEFC96}|AppEdgeCollector\\AppEdgeCollector.csproj|solutionrelative:appedgecollector\\utils\\pollypolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppEdgeCollector",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppEdgeCollector\\AppEdgeCollector\\AppEdgeCollector.csproj",
+              "RelativeDocumentMoniker": "AppEdgeCollector\\AppEdgeCollector.csproj",
+              "ToolTip": "D:\\myproject\\11Test\\AppEdgeCollector\\AppEdgeCollector\\AppEdgeCollector.csproj",
+              "RelativeToolTip": "AppEdgeCollector\\AppEdgeCollector.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-12T22:06:34.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppEdgeCollector\\AppEdgeCollector\\Program.cs",
+              "RelativeDocumentMoniker": "AppEdgeCollector\\Program.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppEdgeCollector\\AppEdgeCollector\\Program.cs",
+              "RelativeToolTip": "AppEdgeCollector\\Program.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T22:01:42.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Worker.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppEdgeCollector\\AppEdgeCollector\\Worker.cs",
+              "RelativeDocumentMoniker": "AppEdgeCollector\\Worker.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppEdgeCollector\\AppEdgeCollector\\Worker.cs",
+              "RelativeToolTip": "AppEdgeCollector\\Worker.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T21:56:34.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PollingManager.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppEdgeCollector\\AppEdgeCollector\\Services\\PollingManager.cs",
+              "RelativeDocumentMoniker": "AppEdgeCollector\\Services\\PollingManager.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppEdgeCollector\\AppEdgeCollector\\Services\\PollingManager.cs",
+              "RelativeToolTip": "AppEdgeCollector\\Services\\PollingManager.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAswI0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T22:01:27.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShortTermBuffer.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppEdgeCollector\\AppEdgeCollector\\Services\\ShortTermBuffer.cs",
+              "RelativeDocumentMoniker": "AppEdgeCollector\\Services\\ShortTermBuffer.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppEdgeCollector\\AppEdgeCollector\\Services\\ShortTermBuffer.cs",
+              "RelativeToolTip": "AppEdgeCollector\\Services\\ShortTermBuffer.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAkwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T22:01:17.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PollyPolicies.cs",
+              "DocumentMoniker": "D:\\myproject\\11Test\\AppEdgeCollector\\AppEdgeCollector\\Utils\\PollyPolicies.cs",
+              "RelativeDocumentMoniker": "AppEdgeCollector\\Utils\\PollyPolicies.cs",
+              "ToolTip": "D:\\myproject\\11Test\\AppEdgeCollector\\AppEdgeCollector\\Utils\\PollyPolicies.cs",
+              "RelativeToolTip": "AppEdgeCollector\\Utils\\PollyPolicies.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAswC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T22:01:07.453Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
