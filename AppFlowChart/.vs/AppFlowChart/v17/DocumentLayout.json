@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\myproject\\18csharp-code\\AppFlowChart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FD5AB499-CB96-47C9-840F-B14FA1104B45}|AppFlowChart\\AppFlowChart.csproj|d:\\myproject\\18csharp-code\\appflowchart\\appflowchart\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD5AB499-CB96-47C9-840F-B14FA1104B45}|AppFlowChart\\AppFlowChart.csproj|solutionrelative:appflowchart\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD5AB499-CB96-47C9-840F-B14FA1104B45}|AppFlowChart\\AppFlowChart.csproj|d:\\myproject\\18csharp-code\\appflowchart\\appflowchart\\custompanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD5AB499-CB96-47C9-840F-B14FA1104B45}|AppFlowChart\\AppFlowChart.csproj|solutionrelative:appflowchart\\custompanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD5AB499-CB96-47C9-840F-B14FA1104B45}|AppFlowChart\\AppFlowChart.csproj|d:\\myproject\\18csharp-code\\appflowchart\\appflowchart\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD5AB499-CB96-47C9-840F-B14FA1104B45}|AppFlowChart\\AppFlowChart.csproj|solutionrelative:appflowchart\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD5AB499-CB96-47C9-840F-B14FA1104B45}|AppFlowChart\\AppFlowChart.csproj|d:\\myproject\\18csharp-code\\appflowchart\\appflowchart\\connectiondirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD5AB499-CB96-47C9-840F-B14FA1104B45}|AppFlowChart\\AppFlowChart.csproj|solutionrelative:appflowchart\\connectiondirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD5AB499-CB96-47C9-840F-B14FA1104B45}|AppFlowChart\\AppFlowChart.csproj|d:\\myproject\\18csharp-code\\appflowchart\\appflowchart\\flowcharteditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD5AB499-CB96-47C9-840F-B14FA1104B45}|AppFlowChart\\AppFlowChart.csproj|solutionrelative:appflowchart\\flowcharteditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomPanel.cs",
+              "DocumentMoniker": "D:\\myproject\\18csharp-code\\AppFlowChart\\AppFlowChart\\CustomPanel.cs",
+              "RelativeDocumentMoniker": "AppFlowChart\\CustomPanel.cs",
+              "ToolTip": "D:\\myproject\\18csharp-code\\AppFlowChart\\AppFlowChart\\CustomPanel.cs",
+              "RelativeToolTip": "AppFlowChart\\CustomPanel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T12:19:02.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FlowChartEditor.cs",
+              "DocumentMoniker": "D:\\myproject\\18csharp-code\\AppFlowChart\\AppFlowChart\\FlowChartEditor.cs",
+              "RelativeDocumentMoniker": "AppFlowChart\\FlowChartEditor.cs",
+              "ToolTip": "D:\\myproject\\18csharp-code\\AppFlowChart\\AppFlowChart\\FlowChartEditor.cs",
+              "RelativeToolTip": "AppFlowChart\\FlowChartEditor.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAYwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T12:02:49.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConnectionDirection.cs",
+              "DocumentMoniker": "D:\\myproject\\18csharp-code\\AppFlowChart\\AppFlowChart\\ConnectionDirection.cs",
+              "RelativeDocumentMoniker": "AppFlowChart\\ConnectionDirection.cs",
+              "ToolTip": "D:\\myproject\\18csharp-code\\AppFlowChart\\AppFlowChart\\ConnectionDirection.cs",
+              "RelativeToolTip": "AppFlowChart\\ConnectionDirection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T12:18:54.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "D:\\myproject\\18csharp-code\\AppFlowChart\\AppFlowChart\\Connection.cs",
+              "RelativeDocumentMoniker": "AppFlowChart\\Connection.cs",
+              "ToolTip": "D:\\myproject\\18csharp-code\\AppFlowChart\\AppFlowChart\\Connection.cs",
+              "RelativeToolTip": "AppFlowChart\\Connection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T12:18:50.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\myproject\\18csharp-code\\AppFlowChart\\AppFlowChart\\Form1.cs",
+              "RelativeDocumentMoniker": "AppFlowChart\\Form1.cs",
+              "ToolTip": "D:\\myproject\\18csharp-code\\AppFlowChart\\AppFlowChart\\Form1.cs",
+              "RelativeToolTip": "AppFlowChart\\Form1.cs",
+              "ViewState": "AgIAAEcBAAAAAAAAAAAiwAkCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T12:02:51.062Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

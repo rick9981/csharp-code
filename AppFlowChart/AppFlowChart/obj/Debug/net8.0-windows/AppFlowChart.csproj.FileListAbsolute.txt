@@ -1,0 +1,16 @@
+D:\myproject\11Test\AppFlowChart\AppFlowChart\bin\Debug\net8.0-windows\AppFlowChart.exe
+D:\myproject\11Test\AppFlowChart\AppFlowChart\bin\Debug\net8.0-windows\AppFlowChart.deps.json
+D:\myproject\11Test\AppFlowChart\AppFlowChart\bin\Debug\net8.0-windows\AppFlowChart.runtimeconfig.json
+D:\myproject\11Test\AppFlowChart\AppFlowChart\bin\Debug\net8.0-windows\AppFlowChart.dll
+D:\myproject\11Test\AppFlowChart\AppFlowChart\bin\Debug\net8.0-windows\AppFlowChart.pdb
+D:\myproject\11Test\AppFlowChart\AppFlowChart\obj\Debug\net8.0-windows\AppFlowChart.GeneratedMSBuildEditorConfig.editorconfig
+D:\myproject\11Test\AppFlowChart\AppFlowChart\obj\Debug\net8.0-windows\AppFlowChart.AssemblyInfoInputs.cache
+D:\myproject\11Test\AppFlowChart\AppFlowChart\obj\Debug\net8.0-windows\AppFlowChart.AssemblyInfo.cs
+D:\myproject\11Test\AppFlowChart\AppFlowChart\obj\Debug\net8.0-windows\AppFlowChart.csproj.CoreCompileInputs.cache
+D:\myproject\11Test\AppFlowChart\AppFlowChart\obj\Debug\net8.0-windows\AppFlowChart.dll
+D:\myproject\11Test\AppFlowChart\AppFlowChart\obj\Debug\net8.0-windows\refint\AppFlowChart.dll
+D:\myproject\11Test\AppFlowChart\AppFlowChart\obj\Debug\net8.0-windows\AppFlowChart.pdb
+D:\myproject\11Test\AppFlowChart\AppFlowChart\obj\Debug\net8.0-windows\AppFlowChart.genruntimeconfig.cache
+D:\myproject\11Test\AppFlowChart\AppFlowChart\obj\Debug\net8.0-windows\ref\AppFlowChart.dll
+D:\myproject\11Test\AppFlowChart\AppFlowChart\obj\Debug\net8.0-windows\AppFlowChart.Form1.resources
+D:\myproject\11Test\AppFlowChart\AppFlowChart\obj\Debug\net8.0-windows\AppFlowChart.csproj.GenerateResource.cache
