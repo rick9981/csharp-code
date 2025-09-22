@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7UkhAkk/z8Y=",
+  "dgSpecHash": "A+YLcw4scVs=",
   "success": true,
-  "projectFilePath": "D:\\myproject\\11Test\\AppKepTool\\AppKepTool\\AppKepTool.csproj",
+  "projectFilePath": "D:\\myproject\\18csharp-code\\AppKepTool\\AppKepTool\\AppKepTool.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\truei\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],

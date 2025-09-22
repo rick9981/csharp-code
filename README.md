@@ -173,3 +173,9 @@ https://mp.weixin.qq.com/s/bX5y9jK0bIj-Cl3uwfwWaA
 
 
 https://mp.weixin.qq.com/s/qtOYndEo46_xWxZ1n6xh8g
+
+## AppBatchOpcUa
+
+### C# OPC UA批量操作实战：从千次单读到毫秒级批处理的性能飞跃
+
+https://mp.weixin.qq.com/s/BLQPGiICb5ACKP8O95KX6g

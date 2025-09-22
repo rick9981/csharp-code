@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\myproject\\11Test\\AppKepTool\\",
+  "WorkspaceRootPath": "D:\\myproject\\18csharp-code\\AppKepTool\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04E6973B-B210-4271-B271-8673BC5DB2DF}|AppKepTool\\AppKepTool.csproj|d:\\myproject\\11test\\appkeptool\\appkeptool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{04E6973B-B210-4271-B271-8673BC5DB2DF}|AppKepTool\\AppKepTool.csproj|d:\\myproject\\18csharp-code\\appkeptool\\appkeptool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04E6973B-B210-4271-B271-8673BC5DB2DF}|AppKepTool\\AppKepTool.csproj|solutionrelative:appkeptool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E6973B-B210-4271-B271-8673BC5DB2DF}|AppKepTool\\AppKepTool.csproj|d:\\myproject\\11test\\appkeptool\\appkeptool\\kepwareapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{04E6973B-B210-4271-B271-8673BC5DB2DF}|AppKepTool\\AppKepTool.csproj|d:\\myproject\\18csharp-code\\appkeptool\\appkeptool\\kepwareapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04E6973B-B210-4271-B271-8673BC5DB2DF}|AppKepTool\\AppKepTool.csproj|solutionrelative:appkeptool\\kepwareapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E6973B-B210-4271-B271-8673BC5DB2DF}|AppKepTool\\AppKepTool.csproj|D:\\myproject\\11Test\\AppKepTool\\appkeptool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{04E6973B-B210-4271-B271-8673BC5DB2DF}|AppKepTool\\AppKepTool.csproj|D:\\myproject\\18csharp-code\\AppKepTool\\appkeptool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{04E6973B-B210-4271-B271-8673BC5DB2DF}|AppKepTool\\AppKepTool.csproj|solutionrelative:appkeptool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E6973B-B210-4271-B271-8673BC5DB2DF}|AppKepTool\\AppKepTool.csproj|d:\\myproject\\11test\\appkeptool\\appkeptool\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{04E6973B-B210-4271-B271-8673BC5DB2DF}|AppKepTool\\AppKepTool.csproj|d:\\myproject\\18csharp-code\\appkeptool\\appkeptool\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04E6973B-B210-4271-B271-8673BC5DB2DF}|AppKepTool\\AppKepTool.csproj|solutionrelative:appkeptool\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E6973B-B210-4271-B271-8673BC5DB2DF}|AppKepTool\\AppKepTool.csproj|d:\\myproject\\11test\\appkeptool\\appkeptool\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{04E6973B-B210-4271-B271-8673BC5DB2DF}|AppKepTool\\AppKepTool.csproj|d:\\myproject\\18csharp-code\\appkeptool\\appkeptool\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04E6973B-B210-4271-B271-8673BC5DB2DF}|AppKepTool\\AppKepTool.csproj|solutionrelative:appkeptool\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -40,9 +40,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\myproject\\11Test\\AppKepTool\\AppKepTool\\Program.cs",
+              "DocumentMoniker": "D:\\myproject\\18csharp-code\\AppKepTool\\AppKepTool\\Program.cs",
               "RelativeDocumentMoniker": "AppKepTool\\Program.cs",
-              "ToolTip": "D:\\myproject\\11Test\\AppKepTool\\AppKepTool\\Program.cs",
+              "ToolTip": "D:\\myproject\\18csharp-code\\AppKepTool\\AppKepTool\\Program.cs",
               "RelativeToolTip": "AppKepTool\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -52,9 +52,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "KepwareApiClient.cs",
-              "DocumentMoniker": "D:\\myproject\\11Test\\AppKepTool\\AppKepTool\\KepwareApiClient.cs",
+              "DocumentMoniker": "D:\\myproject\\18csharp-code\\AppKepTool\\AppKepTool\\KepwareApiClient.cs",
               "RelativeDocumentMoniker": "AppKepTool\\KepwareApiClient.cs",
-              "ToolTip": "D:\\myproject\\11Test\\AppKepTool\\AppKepTool\\KepwareApiClient.cs",
+              "ToolTip": "D:\\myproject\\18csharp-code\\AppKepTool\\AppKepTool\\KepwareApiClient.cs",
               "RelativeToolTip": "AppKepTool\\KepwareApiClient.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAvwCcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -64,9 +64,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\myproject\\11Test\\AppKepTool\\AppKepTool\\Form1.cs",
+              "DocumentMoniker": "D:\\myproject\\18csharp-code\\AppKepTool\\AppKepTool\\Form1.cs",
               "RelativeDocumentMoniker": "AppKepTool\\Form1.cs",
-              "ToolTip": "D:\\myproject\\11Test\\AppKepTool\\AppKepTool\\Form1.cs",
+              "ToolTip": "D:\\myproject\\18csharp-code\\AppKepTool\\AppKepTool\\Form1.cs",
               "RelativeToolTip": "AppKepTool\\Form1.cs",
               "ViewState": "AgIAAGQAAAAAAAAAAAAvwAUBAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -77,9 +77,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "D:\\myproject\\11Test\\AppKepTool\\AppKepTool\\Form1.Designer.cs",
+              "DocumentMoniker": "D:\\myproject\\18csharp-code\\AppKepTool\\AppKepTool\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "AppKepTool\\Form1.Designer.cs",
-              "ToolTip": "D:\\myproject\\11Test\\AppKepTool\\AppKepTool\\Form1.Designer.cs",
+              "ToolTip": "D:\\myproject\\18csharp-code\\AppKepTool\\AppKepTool\\Form1.Designer.cs",
               "RelativeToolTip": "AppKepTool\\Form1.Designer.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAAAiwF4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -89,10 +89,10 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\myproject\\11Test\\AppKepTool\\AppKepTool\\Form1.cs",
+              "DocumentMoniker": "D:\\myproject\\18csharp-code\\AppKepTool\\AppKepTool\\Form1.cs",
               "RelativeDocumentMoniker": "AppKepTool\\Form1.cs",
               "ToolTip": "D:\\myproject\\11Test\\AppKepTool\\AppKepTool\\Form1.cs [Design]",
-              "RelativeToolTip": "AppKepTool\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\..\\11Test\\AppKepTool\\AppKepTool\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-26T10:25:05.142Z"
             }

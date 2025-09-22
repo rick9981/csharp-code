@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppKepTool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76b32d7a4003037fa1fa92e6e6c1fad9b8120424")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppKepTool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppKepTool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

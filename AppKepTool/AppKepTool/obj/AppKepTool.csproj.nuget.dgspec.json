@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\myproject\\11Test\\AppKepTool\\AppKepTool\\AppKepTool.csproj": {}
+    "D:\\myproject\\18csharp-code\\AppKepTool\\AppKepTool\\AppKepTool.csproj": {}
   },
   "projects": {
-    "D:\\myproject\\11Test\\AppKepTool\\AppKepTool\\AppKepTool.csproj": {
+    "D:\\myproject\\18csharp-code\\AppKepTool\\AppKepTool\\AppKepTool.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\myproject\\11Test\\AppKepTool\\AppKepTool\\AppKepTool.csproj",
+        "projectUniqueName": "D:\\myproject\\18csharp-code\\AppKepTool\\AppKepTool\\AppKepTool.csproj",
         "projectName": "AppKepTool",
-        "projectPath": "D:\\myproject\\11Test\\AppKepTool\\AppKepTool\\AppKepTool.csproj",
+        "projectPath": "D:\\myproject\\18csharp-code\\AppKepTool\\AppKepTool\\AppKepTool.csproj",
         "packagesPath": "C:\\Users\\truei\\.nuget\\packages\\",
-        "outputPath": "D:\\myproject\\11Test\\AppKepTool\\AppKepTool\\obj\\",
+        "outputPath": "D:\\myproject\\18csharp-code\\AppKepTool\\AppKepTool\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
