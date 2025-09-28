@@ -179,3 +179,23 @@ https://mp.weixin.qq.com/s/qtOYndEo46_xWxZ1n6xh8g
 ### C# OPC UA批量操作实战：从千次单读到毫秒级批处理的性能飞跃
 
 https://mp.weixin.qq.com/s/BLQPGiICb5ACKP8O95KX6g
+
+## AppScreenRecorder
+
+### 从零到一：C#实现高性能屏幕录制器完全指南
+
+https://mp.weixin.qq.com/s/9eejEOVnBAj4lprKHMFbxA
+
+## AppFody
+
+### 告别WinForm代码混乱！用Fody轻松实现MVVM模式
+
+https://mp.weixin.qq.com/s/ImZQup1uPNXYj1sCpwO2XQ
+
+
+
+## AppEdgeHostedService
+
+### .NET工作服务实战：WINFORM构建工业级边缘数据采集系统
+
+https://mp.weixin.qq.com/s/O7S6rY-4O9WVcoOARI4u6w

@@ -1,0 +1,236 @@
+﻿<Window x:Class="AppScreenRecorder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppScreenRecorder"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" KeyDown="MainWindow_KeyDown"
+        Focusable="True">
+    <Window.Resources>
+        <!-- 样式定义 -->
+        <Style x:Key="ModernButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FF2196F3"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="20,10"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="5"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                            VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FF1976D2"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#FF0D47A1"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="StopButtonStyle" TargetType="Button" BasedOn="{StaticResource ModernButtonStyle}">
+            <Setter Property="Background" Value="#FFF44336"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FFD32F2F"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#FFB71C1C"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="GroupBoxStyle" TargetType="GroupBox">
+            <Setter Property="BorderBrush" Value="#FFCCCCCC"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+        </Style>
+
+        <Style x:Key="StatusLabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- 标题栏 -->
+        <Border Grid.Row="0" Background="#FF2196F3" Padding="20,15">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="🎬" FontSize="24" Margin="0,0,10,0"/>
+                <TextBlock Text="C# 录屏神器" FontSize="20" FontWeight="Bold" Foreground="White" VerticalAlignment="Center"/>
+                <TextBlock Text="轻松实现视频音频同步录制" FontSize="12" Foreground="#FFBBDEFB" VerticalAlignment="Center" Margin="20,0,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- 主要内容区域 -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="20">
+
+                <!-- 录制控制区域 -->
+                <GroupBox Header="🎥 录制控制" Style="{StaticResource GroupBoxStyle}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" Margin="0,0,0,15">
+                            <Button Name="RecordButton" Content="开始录制" 
+                                    Style="{StaticResource ModernButtonStyle}"
+                                    Click="RecordButton_Click" MinWidth="120"/>
+                            <Button Name="StopButton" Content="停止录制" 
+                                    Style="{StaticResource StopButtonStyle}"
+                                    Click="StopButton_Click" MinWidth="120"
+                                    IsEnabled="False"/>
+                            <Button Name="PauseButton" Content="暂停录制" 
+                                    Style="{StaticResource ModernButtonStyle}"
+                                    Click="PauseButton_Click" MinWidth="120"
+                                    IsEnabled="False"/>
+                        </StackPanel>
+
+                        <Label Name="StatusLabel" Content="就绪" Grid.Row="1" Grid.Column="0"
+                               Style="{StaticResource StatusLabelStyle}" Foreground="#FF4CAF50"/>
+
+                        <StackPanel Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Orientation="Vertical">
+                            <TextBlock Text="录制时长:" FontWeight="Medium" Margin="0,0,0,5"/>
+                            <Label Name="RecordTimeLabel" Content="00:00:00" 
+                                   FontSize="18" FontFamily="Consolas" 
+                                   Background="#FFF5F5F5" Padding="10,5"
+                                   HorizontalContentAlignment="Center"/>
+                        </StackPanel>
+                    </Grid>
+                </GroupBox>
+
+                <!-- 录制设置区域 -->
+                <GroupBox Header="⚙️ 录制设置" Style="{StaticResource GroupBoxStyle}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- 视频设置 -->
+                        <TextBlock Text="视频质量:" Grid.Row="0" Grid.Column="0" Margin="0,0,0,5" FontWeight="Medium"/>
+                        <ComboBox Name="VideoQualityComboBox" Grid.Row="0" Grid.Column="1" Margin="10,0,0,10">
+                            <ComboBoxItem Content="高质量 (1080p)" IsSelected="True"/>
+                            <ComboBoxItem Content="标准质量 (720p)"/>
+                            <ComboBoxItem Content="低质量 (480p)"/>
+                        </ComboBox>
+
+                        <TextBlock Text="帧率 (FPS):" Grid.Row="1" Grid.Column="0" Margin="0,0,0,5" FontWeight="Medium"/>
+                        <ComboBox Name="FrameRateComboBox" Grid.Row="1" Grid.Column="1" Margin="10,0,0,10">
+                            <ComboBoxItem Content="60 FPS"/>
+                            <ComboBoxItem Content="30 FPS" IsSelected="True"/>
+                            <ComboBoxItem Content="24 FPS"/>
+                            <ComboBoxItem Content="15 FPS"/>
+                        </ComboBox>
+
+                        <!-- 音频设置 -->
+                        <CheckBox Name="RecordSystemAudioCheckBox" Content="录制系统音频" 
+                                  Grid.Row="2" Grid.Column="0" IsChecked="True" Margin="0,10"/>
+                        <CheckBox Name="RecordMicAudioCheckBox" Content="录制麦克风" 
+                                  Grid.Row="2" Grid.Column="1" IsChecked="True" Margin="10,10,0,10"/>
+
+                        <!-- 录制区域 -->
+                        <TextBlock Text="录制区域:" Grid.Row="3" Grid.Column="0" Margin="0,0,0,5" FontWeight="Medium"/>
+                        <ComboBox Name="RecordAreaComboBox" Grid.Row="3" Grid.Column="1" Margin="10,0,0,10">
+                            <ComboBoxItem Content="全屏录制" IsSelected="True"/>
+                            <ComboBoxItem Content="选择窗口"/>
+                            <ComboBoxItem Content="自定义区域"/>
+                        </ComboBox>
+
+                        <!-- 输出路径 -->
+                        <TextBlock Text="保存路径:" Grid.Row="4" Grid.Column="0" Margin="0,10,0,5" FontWeight="Medium"/>
+                        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" Margin="10,10,0,0">
+                            <TextBox Name="OutputPathTextBox" Width="200" Margin="0,0,10,0" 
+                                     Text="C:\录屏文件\录屏_" IsReadOnly="True"/>
+                            <Button Content="浏览..." Click="BrowseButton_Click" 
+                                    Style="{StaticResource ModernButtonStyle}" Padding="10,5"/>
+                        </StackPanel>
+                    </Grid>
+                </GroupBox>
+
+
+                <!-- 快捷键设置 -->
+                <GroupBox Header="⌨️ 快捷键" Style="{StaticResource GroupBoxStyle}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Text="开始/停止录制:" Grid.Row="0" Grid.Column="0" Margin="0,0,20,5" FontWeight="Medium"/>
+                        <TextBlock Text="F9" Grid.Row="0" Grid.Column="1" FontFamily="Consolas" Background="#FFF0F0F0" Padding="5,2"/>
+
+                        <TextBlock Text="暂停/恢复:" Grid.Row="1" Grid.Column="0" Margin="0,0,20,5" FontWeight="Medium"/>
+                        <TextBlock Text="F10" Grid.Row="1" Grid.Column="1" FontFamily="Consolas" Background="#FFF0F0F0" Padding="5,2"/>
+
+                        <TextBlock Text="截图:" Grid.Row="2" Grid.Column="0" Margin="0,0,20,5" FontWeight="Medium"/>
+                        <TextBlock Text="F11" Grid.Row="2" Grid.Column="1" FontFamily="Consolas" Background="#FFF0F0F0" Padding="5,2"/>
+                    </Grid>
+                </GroupBox>
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- 底部状态栏 -->
+        <Border Grid.Row="2" Background="#FFF5F5F5" BorderBrush="#FFDDDDDD" BorderThickness="0,1,0,0">
+            <Grid Margin="20,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Orientation="Horizontal">
+                    <TextBlock Text="状态:" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                    <Ellipse Name="StatusIndicator" Width="12" Height="12" Fill="#FF4CAF50" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                    <TextBlock Name="DetailStatusLabel" Text="系统就绪" VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                    <Button Content="📁 打开输出文件夹" Click="OpenOutputFolderButton_Click" 
+                            Style="{StaticResource ModernButtonStyle}" Padding="10,5" Margin="0,0,10,0"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>
