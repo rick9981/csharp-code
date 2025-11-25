@@ -199,3 +199,15 @@ https://mp.weixin.qq.com/s/ImZQup1uPNXYj1sCpwO2XQ
 ### .NET工作服务实战：WINFORM构建工业级边缘数据采集系统
 
 https://mp.weixin.qq.com/s/O7S6rY-4O9WVcoOARI4u6w
+
+
+## AppPrinter
+
+### 🏆 C#打印神器：一个类库配置JSON搞定所有复杂表格打印需求
+https://www.otteach.cn/post/1151
+
+
+## AppNetworkFileTransfer
+
+### 🚀 C#网络文件传输实战：手把手教你打造工业级传输工具
+https://www.otteach.cn/post/1143

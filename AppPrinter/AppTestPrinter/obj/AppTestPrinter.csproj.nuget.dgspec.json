@@ -1,0 +1,158 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\myproject\\1IdioSoft\\idiosoft.snaps\\printer\\AppTestPrinter\\AppTestPrinter.csproj": {}
+  },
+  "projects": {
+    "D:\\myproject\\1IdioSoft\\idiosoft.snaps\\printer\\AppTestPrinter\\AppTestPrinter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\myproject\\1IdioSoft\\idiosoft.snaps\\printer\\AppTestPrinter\\AppTestPrinter.csproj",
+        "projectName": "AppTestPrinter",
+        "projectPath": "D:\\myproject\\1IdioSoft\\idiosoft.snaps\\printer\\AppTestPrinter\\AppTestPrinter.csproj",
+        "packagesPath": "C:\\Users\\truei\\.nuget\\packages\\",
+        "outputPath": "D:\\myproject\\1IdioSoft\\idiosoft.snaps\\printer\\AppTestPrinter\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\truei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\myproject\\1IdioSoft\\idiosoft.snaps\\printer\\PrinterLibrary\\PrinterLibrary.csproj": {
+                "projectPath": "D:\\myproject\\1IdioSoft\\idiosoft.snaps\\printer\\PrinterLibrary\\PrinterLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\myproject\\1IdioSoft\\idiosoft.snaps\\printer\\PrinterLibrary\\PrinterLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\myproject\\1IdioSoft\\idiosoft.snaps\\printer\\PrinterLibrary\\PrinterLibrary.csproj",
+        "projectName": "PrinterLibrary",
+        "projectPath": "D:\\myproject\\1IdioSoft\\idiosoft.snaps\\printer\\PrinterLibrary\\PrinterLibrary.csproj",
+        "packagesPath": "C:\\Users\\truei\\.nuget\\packages\\",
+        "outputPath": "D:\\myproject\\1IdioSoft\\idiosoft.snaps\\printer\\PrinterLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\truei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.CSharp.Scripting": {
+              "target": "Package",
+              "version": "[4.11.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "ZXing.Net.Bindings.Windows.Compatibility": {
+              "target": "Package",
+              "version": "[0.16.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

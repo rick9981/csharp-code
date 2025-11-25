@@ -1,0 +1,244 @@
+﻿{
+    "Printer": {
+        "Name": "Microsoft Print to PDF",
+        "PaperSize": "A4"
+        //"Landscape": true //横向打印
+        //"CustomPaperSize": "90x90" //毫米单位,如果有了自定义纸张，优先级比设备纸张高
+    },
+    "StartPosition": {
+        "X": 10,
+        "Y": 10
+    },
+    "RowsCount": 6,
+    "ColumnsCount": 5,
+    "ColumnsWidths": [ 80, 80, 80, 80, 80 ],
+    "BarCodes": [
+        {
+            "RowIndex": "1",
+            "ColumnIndex": "5",
+            "Tilte": "$barcode$",
+            "Sizes": {
+                "Width": 64,
+                "Height": 64
+            },
+            "BarcodeType": "QRCODE" //CODE128,QRCODE
+        }
+    ],
+  "Rows": [
+    {
+      "RowIndex": "1",
+      "Borders": [
+        {
+          "Direction": "Bottom",
+          "Width": 1,
+          "Style": "Dot",
+          "Color": "#000000"
+        },
+        {
+          "Direction": "Top",
+          "Width": 0,
+          "Style": "Solid",
+          "Color": "#FFFFFF"
+        },
+        {
+          "Direction": "Left",
+          "Width": 0,
+          "Style": "Solid",
+          "Color": "#FFFFFF"
+        },
+        {
+          "Direction": "Right",
+          "Width": 0,
+          "Style": "Solid",
+          "Color": "#FFFFFF"
+        }
+      ],
+      "Cells": [
+        {
+          "Title": "原材料码单",
+          "ColumnIndex": "1",
+          "Font": {
+            "Name": "SimHei",
+            "Size": 20,
+            "Bold": true,
+            "Italic": false
+          },
+          "Merge": [
+            "1",
+            "1",
+            "1",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "RowIndex": "2",
+      "Cells": [
+        {
+          "Title": "供应商",
+          "ColumnIndex": "1",
+          "Alignment": "Near",
+          "LineAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "RowIndex": "2",
+      "Cells": [
+        {
+          "Title": "$supplier$",
+          "ColumnIndex": "2",
+          "Alignment": "Near",
+          "LineAlignment": "Center",
+          "Merge": [
+            "2",
+            "2",
+            "2",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "RowIndex": "3",
+      "Cells": [
+        {
+          "Title": "零件号",
+          "ColumnIndex": "1",
+          "Alignment": "Near",
+          "LineAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "RowIndex": "3",
+      "Cells": [
+        {
+          "Title": "$part_no$",
+          "ColumnIndex": "2",
+          "Merge": [
+            "3",
+            "2",
+            "3",
+            "5"
+          ],
+          "Alignment": "Near",
+          "LineAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "RowIndex": "4",
+      "Cells": [
+        {
+          "Title": "零件描述",
+          "ColumnIndex": "1",
+          "Merge": [
+            "3",
+            "2",
+            "3",
+            "5"
+          ],
+          "Alignment": "Near",
+          "LineAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "RowIndex": "4",
+      "Cells": [
+        {
+          "Title": "$part_description$",
+          "ColumnIndex": "2",
+          "Merge": [
+            "4",
+            "2",
+            "4",
+            "5"
+          ],
+          "Alignment": "Near",
+          "LineAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "RowIndex": "5",
+      "Cells": [
+        {
+          "Title": "单位",
+          "ColumnIndex": "1",
+          "Alignment": "Near",
+          "LineAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "RowIndex": "5",
+      "Cells": [
+        {
+          "Title": "$unit$",
+          "ColumnIndex": "2",
+          "Merge": [
+            "5",
+            "2",
+            "5",
+            "3"
+          ],
+          "Alignment": "Near",
+          "LineAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "RowIndex": "5",
+      "Cells": [
+        {
+          "Title": "数量",
+          "ColumnIndex": "4",
+          "Alignment": "Near",
+          "LineAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "RowIndex": "5",
+      "Cells": [
+        {
+          "Title": "$qty$",
+          "ColumnIndex": "5",
+          "Alignment": "Near",
+          "LineAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "RowIndex": "6",
+      "Cells": [
+        {
+          "Title": "批次号",
+          "ColumnIndex": "1",
+          "Alignment": "Near",
+          "LineAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "RowIndex": "6",
+      "Cells": [
+        {
+          "Title": "$batch_no$",
+          "ColumnIndex": "2",
+          "Merge": [
+            "6",
+            "2",
+            "6",
+            "5"
+          ],
+          "Alignment": "Near",
+          "LineAlignment": "Center"
+        }
+      ]
+    }
+  ]
+}

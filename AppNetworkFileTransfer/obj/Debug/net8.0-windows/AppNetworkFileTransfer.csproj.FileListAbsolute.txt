@@ -1,0 +1,16 @@
+D:\myproject\11Test\AppNetworkFileTransfer\AppNetworkFileTransfer\obj\Debug\net8.0-windows\AppNetworkFileTransfer.FrmMain.resources
+D:\myproject\11Test\AppNetworkFileTransfer\AppNetworkFileTransfer\obj\Debug\net8.0-windows\AppNetworkFileTransfer.csproj.GenerateResource.cache
+D:\myproject\11Test\AppNetworkFileTransfer\AppNetworkFileTransfer\obj\Debug\net8.0-windows\AppNetworkFileTransfer.GeneratedMSBuildEditorConfig.editorconfig
+D:\myproject\11Test\AppNetworkFileTransfer\AppNetworkFileTransfer\obj\Debug\net8.0-windows\AppNetworkFileTransfer.AssemblyInfoInputs.cache
+D:\myproject\11Test\AppNetworkFileTransfer\AppNetworkFileTransfer\obj\Debug\net8.0-windows\AppNetworkFileTransfer.AssemblyInfo.cs
+D:\myproject\11Test\AppNetworkFileTransfer\AppNetworkFileTransfer\obj\Debug\net8.0-windows\AppNetworkFileTransfer.csproj.CoreCompileInputs.cache
+D:\myproject\11Test\AppNetworkFileTransfer\AppNetworkFileTransfer\bin\Debug\net8.0-windows\AppNetworkFileTransfer.exe
+D:\myproject\11Test\AppNetworkFileTransfer\AppNetworkFileTransfer\bin\Debug\net8.0-windows\AppNetworkFileTransfer.deps.json
+D:\myproject\11Test\AppNetworkFileTransfer\AppNetworkFileTransfer\bin\Debug\net8.0-windows\AppNetworkFileTransfer.runtimeconfig.json
+D:\myproject\11Test\AppNetworkFileTransfer\AppNetworkFileTransfer\bin\Debug\net8.0-windows\AppNetworkFileTransfer.dll
+D:\myproject\11Test\AppNetworkFileTransfer\AppNetworkFileTransfer\bin\Debug\net8.0-windows\AppNetworkFileTransfer.pdb
+D:\myproject\11Test\AppNetworkFileTransfer\AppNetworkFileTransfer\obj\Debug\net8.0-windows\AppNetworkFileTransfer.dll
+D:\myproject\11Test\AppNetworkFileTransfer\AppNetworkFileTransfer\obj\Debug\net8.0-windows\refint\AppNetworkFileTransfer.dll
+D:\myproject\11Test\AppNetworkFileTransfer\AppNetworkFileTransfer\obj\Debug\net8.0-windows\AppNetworkFileTransfer.pdb
+D:\myproject\11Test\AppNetworkFileTransfer\AppNetworkFileTransfer\obj\Debug\net8.0-windows\AppNetworkFileTransfer.genruntimeconfig.cache
+D:\myproject\11Test\AppNetworkFileTransfer\AppNetworkFileTransfer\obj\Debug\net8.0-windows\ref\AppNetworkFileTransfer.dll

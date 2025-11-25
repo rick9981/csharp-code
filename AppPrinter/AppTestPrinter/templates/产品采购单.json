@@ -1,0 +1,380 @@
+{
+  "Printer": {
+    "Name": "Microsoft Print to PDF",
+    "PaperSize": "A4"
+    //"Landscape": true //横向打印
+    //"CustomPaperSize": "90x90" //毫米单位,如果有了自定义纸张，优先级比设备纸张高
+  },
+  "StartPosition": {
+    "X": 10,
+    "Y": 10
+  },
+  "RowsCount": 7,
+  "ColumnsCount": 7,
+  "ColumnsWidths": [ 80, 200, 200, 80, 80, 80, 80 ],
+  "BarCodes": [
+    {
+      "RowIndex": "1",
+      "ColumnIndex": "7",
+      "Tilte": "$purchase_no$",
+      "Sizes": {
+        "Width": 64,
+        "Height": 64
+      },
+      "BarcodeType": "QRCODE" //CODE128,QRCODE
+    }
+  ],
+  "Rows": [
+    {
+      "RowIndex": "1",
+      "Borders": [
+        {
+            "Direction": "Bottom",
+            "Width": 1,
+            "Style": "Dot",
+            "Color": "#000000"
+        },
+        {
+            "Direction": "Top",
+            "Width": 0,
+            "Style": "Dot",
+            "Color": "#FFFFFF"
+        },
+        {
+            "Direction": "Left",
+            "Width": 0,
+            "Style": "Dot",
+            "Color": "#FFFFFF"
+        },
+        {
+            "Direction": "Right",
+            "Width": 0,
+            "Style": "Dot",
+            "Color": "#FFFFFF"
+        }
+      ],
+      "Cells": [
+        {
+          "Title": "产品采购单",
+          "ColumnIndex": "1",
+          "Font": {
+            "Name": "SimHei",
+            "Size": 20,
+            "Bold": true,
+            "Italic": false
+          },
+          "Merge": [
+            "1",
+            "1",
+            "1",
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "RowIndex": "2",
+      "Cells": [
+        {
+          "Title": "NO:$purchase_no$",
+          "ColumnIndex": "1",
+          "Merge": [
+            "2",
+            "1",
+            "2",
+            "7"
+          ],
+          "Alignment": "Far",
+          "LineAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "RowIndex": "3",
+      "Cells": [
+        {
+          "Title": "采购单位：$supplier$",
+          "ColumnIndex": "1",
+          "Alignment": "Near",
+          "LineAlignment": "Center",
+          "Merge": [
+            "3",
+            "1",
+            "3",
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "RowIndex": "4",
+      "Cells": [
+        {
+          "Title": "要求到货日期：$requested_arrival_time,date,yyyy-MM-dd$",
+          "ColumnIndex": "1",
+          "Merge": [
+            "4",
+            "1",
+            "4",
+            "5"
+          ],
+          "Alignment": "Near",
+          "LineAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "RowIndex": "4",
+      "Cells": [
+        {
+          "Title": "采购人：$CreateUserName$",
+          "ColumnIndex": "6",
+          "Merge": [
+            "4",
+            "6",
+            "4",
+            "7"
+          ],
+          "Alignment": "Near",
+          "LineAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "RowIndex": "5",
+      "Cells": [
+        {
+          "Title": "序号",
+          "ColumnIndex": "1",
+          "Alignment": "Center",
+          "LineAlignment": "Center"
+        },
+        {
+          "Title": "产品名称",
+          "ColumnIndex": "2",
+          "Alignment": "Center",
+          "LineAlignment": "Center"
+        },
+        {
+          "Title": "产品描述",
+          "ColumnIndex": "3",
+          "Alignment": "Center",
+          "LineAlignment": "Center"
+        },
+        {
+          "Title": "单位",
+          "ColumnIndex": "4",
+          "Alignment": "Center",
+          "LineAlignment": "Center"
+        },
+        {
+          "Title": "数量",
+          "ColumnIndex": "5",
+          "Alignment": "Center",
+          "LineAlignment": "Center"
+        },
+        {
+          "Title": "单价",
+          "ColumnIndex": "6",
+          "Alignment": "Center",
+          "LineAlignment": "Center"
+        },
+        {
+          "Title": "备注",
+          "ColumnIndex": "7",
+          "Alignment": "Center",
+          "LineAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "RowIndex": "6",
+      "Is_Items": true,
+      "Cells": [
+        {
+          "Title": "$seq_no$",
+          "ColumnIndex": "1",
+          "Alignment": "Center",
+          "LineAlignment": "Center"
+        },
+        {
+          "Title": "$part_no$",
+          "ColumnIndex": "2",
+          "Alignment": "Center",
+          "LineAlignment": "Center"
+        },
+        {
+          "Title": "$part_description$",
+          "ColumnIndex": "3",
+          "Alignment": "Center",
+          "LineAlignment": "Center"
+        },
+        {
+          "Title": "$unit$",
+          "ColumnIndex": "4",
+          "Alignment": "Center",
+          "LineAlignment": "Center"
+        },
+        {
+          "Title": "$qty$",
+          "ColumnIndex": "5",
+          "Alignment": "Center",
+          "LineAlignment": "Center"
+        },
+        {
+          "Title": "",
+          "ColumnIndex": "6",
+          "Alignment": "Center",
+          "LineAlignment": "Center"
+        },
+        {
+          "Title": "$remark$",
+          "ColumnIndex": "7",
+          "Alignment": "Center",
+          "LineAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "RowIndex": "5+Items.Count+1",
+      "Height": "60",
+      "Cells": [
+        {
+          "Title": "$remark$",
+          "ColumnIndex": "1",
+          "Merge": [
+            "5+Items.Count+1",
+            "1",
+            "5+Items.Count+1",
+            "7"
+          ],
+          "Alignment": "Left",
+          "LineAlignment": "Center"
+        }
+      ],
+      "Borders": [
+        {
+          "Direction": "Bottom",
+          "Width": 0,
+          "Style": "Solid",
+          "Color": "#000000"
+        }
+      ]
+    },
+    {
+      "RowIndex": "6+Items.Count+1",
+      "Borders": [
+        {
+          "Direction": "Top",
+          "Width": 1,
+          "Style": "Solid",
+          "Color": "#000000"
+        },
+        {
+          "Direction": "Bottom",
+          "Width": 0,
+          "Style": "Solid",
+          "Color": "#000000"
+        },
+        {
+          "Direction": "Left",
+          "Width": 0,
+          "Style": "Solid",
+          "Color": "#000000"
+        },
+        {
+          "Direction": "Right",
+          "Width": 0,
+          "Style": "Solid",
+          "Color": "#000000"
+        }
+      ],
+      "Cells": [
+        {
+          "Title": "制表：",
+          "ColumnIndex": "1",
+          "Alignment": "Center",
+          "LineAlignment": "Center",
+          "Borders": [
+            {
+              "Direction": "Right",
+              "Width": 0,
+              "Style": "Solid",
+              "Color": "#000000"
+            },
+            {
+              "Direction": "Left",
+              "Width": 0,
+              "Style": "Solid",
+              "Color": "#000000"
+            },
+            {
+              "Direction": "Bottom",
+              "Width": 0,
+              "Style": "Solid",
+              "Color": "#000000"
+            }
+          ]
+        },
+        {
+          "Title": "审核：",
+          "ColumnIndex": "3",
+          "Merge": [
+            "6+Items.Count+1",
+            "3",
+            "6+Items.Count+1",
+            "5"
+          ],
+          "Borders": [
+            {
+              "Direction": "Right",
+              "Width": 0,
+              "Style": "Solid",
+              "Color": "#000000"
+            },
+            {
+              "Direction": "Left",
+              "Width": 0,
+              "Style": "Solid",
+              "Color": "#000000"
+            },
+            {
+              "Direction": "Bottom",
+              "Width": 0,
+              "Style": "Solid",
+              "Color": "#000000"
+            }
+          ],
+          "Alignment": "Left",
+          "LineAlignment": "Center"
+        },
+        {
+          "Title": "签字：",
+          "ColumnIndex": "6",
+          "Alignment": "Center",
+          "LineAlignment": "Center",
+          "Borders": [
+            {
+              "Direction": "Right",
+              "Width": 0,
+              "Style": "Solid",
+              "Color": "#000000"
+            },
+            {
+              "Direction": "Left",
+              "Width": 0,
+              "Style": "Solid",
+              "Color": "#000000"
+            },
+            {
+              "Direction": "Bottom",
+              "Width": 0,
+              "Style": "Solid",
+              "Color": "#000000"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

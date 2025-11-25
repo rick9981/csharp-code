@@ -1,0 +1,791 @@
+﻿using Microsoft.CodeAnalysis.CSharp.Scripting;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Linq;
+using System.Net.NetworkInformation;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Text.Json;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using ZXing;
+using ZXing.QrCode.Internal;
+using ZXing.Windows.Compatibility;
+
+namespace PrinterLibrary
+{
+    public class TableDocument
+    {
+        public List<Column> Columns { get; set; } = new List<Column>();
+        public List<Row> Rows { get; set; } = new List<Row>();
+        public List<Position> Positions { get; set; } = new List<Position>(); // 单元格位置索引
+
+        // 合并单元格信息
+        public Dictionary<Position, Position> MergeCell { get; set; } = new Dictionary<Position, Position>();
+
+
+        // 确定特定单元格的位置
+        public Position? GetPosition(int rowIndex, int columnIndex)
+        {
+            return Positions.Find(x => x.RowIndex == rowIndex && x.ColumnIndex == columnIndex);
+        }
+
+        // 获取列宽
+        public int GetColumnWidth(int columnIndex)
+        {
+            return Columns[columnIndex].Width;
+        }
+
+        // 获取行高
+        public int GetRowHeight(int rowIndex)
+        {
+            return Rows[rowIndex].Height;
+        }
+
+
+
+        // 在指定单元格内绘制图像
+        public void DrawImageInCell(Graphics graphics, Position position, System.Drawing.Image image, Point offset)
+        {
+            Rectangle imageRect = new Rectangle(position.Point.X + offset.X, position.Point.Y + offset.Y, image.Width, image.Height);
+            graphics.DrawImage(image, imageRect);
+        }
+
+        // 调整图像尺寸
+        private System.Drawing.Image ResizeImage(System.Drawing.Image image, double scaleFactor)
+        {
+            int newWidth = (int)(image.Width * scaleFactor);
+            int newHeight = (int)(image.Height * scaleFactor);
+            Bitmap resizedImage = new Bitmap(newWidth, newHeight);
+            using (Graphics graphics = Graphics.FromImage(resizedImage))
+            {
+                graphics.DrawImage(image, 0, 0, newWidth, newHeight);
+            }
+            return resizedImage;
+        }
+
+        // 调整图像尺寸
+        public System.Drawing.Image ResizeImage(System.Drawing.Image image, int width, int height)
+        {
+            Bitmap resizedImage = new Bitmap(width, height);
+            using (Graphics graphics = Graphics.FromImage(resizedImage))
+            {
+                graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                graphics.SmoothingMode = SmoothingMode.HighQuality;
+                graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
+                graphics.DrawImage(image, new Rectangle(0, 0, width, height));
+            }
+            return resizedImage;
+        }
+
+        // 在指定单元格内绘制二维码
+        public void DrawQRCode(Graphics graphics, string code, Position position, Point offset, int width = 64, int height = 64)
+        {
+            BarcodeWriter writer = new BarcodeWriter();
+            writer.Options = new ZXing.Common.EncodingOptions
+            {
+                Width = width,
+                Height = height,
+                Margin = 0,
+                PureBarcode = true
+            };
+            writer.Format = BarcodeFormat.QR_CODE;
+            Bitmap bitmap2 = writer.Write(code);
+            this.DrawImageInCell(graphics, position, bitmap2, offset);
+        }
+
+        // 在指定单元格内绘制条形码
+        public void Draw128Code(Graphics graphics, string code, Position position, int width
+            , int height, Point offset, bool PureBarcode = false)
+        {
+            BarcodeWriter writer = new BarcodeWriter();
+            writer.Options = new ZXing.Common.EncodingOptions
+            {
+                Width = width,
+                Height = height,
+                Margin = 0,
+                PureBarcode = PureBarcode
+            };
+            writer.Format = BarcodeFormat.CODE_128;
+            Bitmap bitmap2 = writer.Write(code);
+            this.DrawImageInCell(graphics, position, bitmap2, offset);
+        }
+
+        // 在指定单元格内绘制文本
+        public void DrawTextInCell(Graphics graphics, Position position, string text, Font font, Brush brush
+            , int mergeRow = 0, int mergeColumn = 0, StringFormat stringFormat = null)
+        {
+            StringFormat sf = StringFormat.GenericTypographic;
+            //SizeF sizeF1 = graphics.MeasureString(text, font, PointF.Empty, sf);
+
+            SizeF sizeF = MeasureTextSize(graphics, text, font);
+            RectangleF layoutRectangle;
+            int rectHeight = this.GetRowHeight(position.RowIndex);
+            for (int i = 0; i < mergeRow; i++)
+            {
+                rectHeight += this.GetRowHeight(position.RowIndex + i);
+            }
+
+            int rectWidth = this.GetColumnWidth(position.ColumnIndex);
+            for (int i = 1; i < mergeColumn; i++)
+            {
+                rectWidth += this.GetColumnWidth(position.ColumnIndex + i);
+            }
+            layoutRectangle = new RectangleF(position.Point.X, position.Point.Y, rectWidth, rectHeight);
+            if (stringFormat == null)
+            {
+                stringFormat = new StringFormat
+                {
+                    Alignment = StringAlignment.Center,
+                    LineAlignment = StringAlignment.Center,
+                };
+            }
+
+            graphics.DrawString(text, font, brush, layoutRectangle, stringFormat);
+        }
+
+        // 测量文本的尺寸
+        public static SizeF MeasureTextSize(Graphics graphics, string text, Font font)
+        {
+
+            return graphics.MeasureString(text, font);
+        }
+
+        // 绘制基本表格结构
+        public void Draw(Graphics graphics, TableConfig config)
+        {
+            graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
+            int startX = config.StartPosition.X;
+            int startY = config.StartPosition.Y;
+
+            Pen pen = new Pen(Color.Black, 1); // 设置表格线条颜色和宽度
+            int currentY = startY;
+            for (int i = 0; i < this.Rows.Count; i++)
+            {
+                int currentX = startX;
+                for (int j = 0; j < this.Columns.Count; j++)
+                {
+                    this.Positions.Add(new Position(i, j, new Point(currentX, currentY)));
+                    graphics.DrawRectangle(pen, currentX, currentY, this.Columns[j].Width, this.Rows[i].Height);
+                    currentX += this.Columns[j].Width;
+                }
+                currentY += this.Rows[i].Height;
+            }
+
+            // 处理单元格合并
+            foreach (var item in this.MergeCell)
+            {
+                int startRowIndex = item.Key.RowIndex - 1;
+                int startColIndex = item.Key.ColumnIndex - 1;
+                int w = 0;
+                int h = 0;
+                for (int i = startRowIndex; i < item.Value.RowIndex; i++)
+                {
+                    h += this.GetRowHeight(i);
+                }
+                for (int i = startColIndex; i < item.Value.ColumnIndex; i++)
+                {
+                    w += this.GetColumnWidth(i);
+                }
+
+                graphics.FillRectangle(new SolidBrush(System.Drawing.Color.White),
+                    this.GetPosition(startRowIndex, startColIndex).Point.X,
+                    this.GetPosition(startRowIndex, startColIndex).Point.Y, w, h);
+
+                graphics.DrawRectangle(pen,
+                    this.GetPosition(startRowIndex, startColIndex).Point.X,
+                    this.GetPosition(startRowIndex, startColIndex).Point.Y, w, h);
+            }
+
+            foreach (var row in config.Rows)
+            {
+                int intRowIndex = int.Parse(row.RowIndex);
+
+                if (row.Borders != null)
+                {
+                    foreach (var br in row.Borders)
+                    {
+                        Pen pen1;
+                        Brush brush;
+                        switch (br.Style)
+                        {
+                            case "Solid":
+                                brush = new SolidBrush(ColorTranslator.FromHtml(br.Color));
+                                break;
+                            case "Dot":
+                                brush = new HatchBrush(HatchStyle.DashedHorizontal, ColorTranslator.FromHtml(br.Color), Color.White);
+                                break;
+                            default:
+                                brush = new SolidBrush(ColorTranslator.FromHtml(br.Color));
+                                break;
+                        }
+
+                        if (br.Width == 0)
+                        {
+                            pen1 = new Pen(Color.White, 2);
+                        }
+                        else
+                        {
+                            pen1 = new Pen(brush, br.Width);
+                        }
+
+                        switch (br.Direction)
+                        {
+                            case "Top":
+                                if (br.Width == 0)
+                                {
+                                    graphics.DrawLine(pen1, this.GetPosition(intRowIndex - 1, 0).Point.X - 1, this.GetPosition(intRowIndex - 1, 0).Point.Y, this.GetPosition(intRowIndex - 1, this.Columns.Count - 1).Point.X + this.GetColumnWidth(this.Columns.Count - 1) + 1, this.GetPosition(intRowIndex - 1, 0).Point.Y);
+
+                                }
+                                else
+                                {
+                                    graphics.DrawLine(pen1, this.GetPosition(intRowIndex - 1, 0).Point.X, this.GetPosition(intRowIndex - 1, 0).Point.Y, this.GetPosition(intRowIndex - 1, this.Columns.Count - 1).Point.X + this.GetColumnWidth(this.Columns.Count - 1) + 1, this.GetPosition(intRowIndex - 1, 0).Point.Y);
+                                }
+                                break;
+                            case "Bottom":
+                                graphics.DrawLine(pen1, this.GetPosition(intRowIndex - 1, 0).Point.X, this.GetPosition(intRowIndex - 1, this.Columns.Count - 1).Point.Y + this.GetRowHeight(intRowIndex - 1), this.GetPosition(intRowIndex - 1, this.Columns.Count - 1).Point.X + this.GetColumnWidth(this.Columns.Count - 1), this.GetPosition(intRowIndex - 1, this.Columns.Count - 1).Point.Y + this.GetRowHeight(intRowIndex - 1));
+                                break;
+                            case "Left":
+                                if (br.Width == 0)
+                                {
+                                    graphics.DrawLine(pen1, this.GetPosition(intRowIndex - 1, 0).Point.X, this.GetPosition(intRowIndex - 1, 0).Point.Y + 1, this.GetPosition(intRowIndex - 1, 0).Point.X, this.GetPosition(intRowIndex - 1, this.Columns.Count - 1).Point.Y + this.GetRowHeight(intRowIndex - 1));
+                                }
+                                else
+                                {
+                                    graphics.DrawLine(pen1, this.GetPosition(intRowIndex - 1, 0).Point.X, this.GetPosition(intRowIndex - 1, 0).Point.Y, this.GetPosition(intRowIndex - 1, 0).Point.X, this.GetPosition(intRowIndex - 1, this.Columns.Count - 1).Point.Y + this.GetRowHeight(intRowIndex - 1));
+                                }
+                                break;
+                            case "Right":
+                                if (br.Width == 0)
+                                {
+                                    graphics.DrawLine(pen1, this.GetPosition(intRowIndex - 1, this.Columns.Count - 1).Point.X + this.GetColumnWidth(this.Columns.Count - 1), this.GetPosition(intRowIndex - 1, 0).Point.Y + 1, this.GetPosition(intRowIndex - 1, this.Columns.Count - 1).Point.X + this.GetColumnWidth(this.Columns.Count - 1), this.GetPosition(intRowIndex - 1, this.Columns.Count - 1).Point.Y + this.GetRowHeight(intRowIndex - 1));
+                                }
+                                else
+                                {
+                                    graphics.DrawLine(pen1, this.GetPosition(intRowIndex - 1, this.Columns.Count - 1).Point.X + this.GetColumnWidth(this.Columns.Count - 1), this.GetPosition(intRowIndex - 1, 0).Point.Y, this.GetPosition(intRowIndex - 1, this.Columns.Count - 1).Point.X + this.GetColumnWidth(this.Columns.Count - 1), this.GetPosition(intRowIndex - 1, this.Columns.Count - 1).Point.Y + this.GetRowHeight(intRowIndex - 1));
+                                }
+                                break;
+                            default:
+                                break;
+                        }
+
+                    }
+                }
+
+                foreach (var cell in row.Cells)
+                {
+                    if (cell.Borders != null && cell.Borders.Count > 0)
+                    {
+                        foreach (var br in cell.Borders)
+                        {
+                            Pen pen1;
+                            Brush brush;
+                            switch (br.Style)
+                            {
+                                case "Solid":
+                                    brush = new SolidBrush(ColorTranslator.FromHtml(br.Color));
+                                    break;
+                                case "Dot":
+                                    brush = new HatchBrush(HatchStyle.DashedHorizontal, ColorTranslator.FromHtml(br.Color), Color.White);
+                                    break;
+                                default:
+                                    brush = new SolidBrush(ColorTranslator.FromHtml(br.Color));
+                                    break;
+                            }
+
+                            if (br.Width == 0)
+                            {
+                                pen1 = new Pen(Color.White, 2);
+                            }
+                            else
+                            {
+                                pen1 = new Pen(brush, br.Width);
+                            }
+
+                            switch (br.Direction)
+                            {
+                                case "Top":
+                                    break;
+                                case "Bottom":
+                                    break;
+                                case "Left":
+                                    graphics.DrawLine(pen1
+                                        , this.GetPosition(intRowIndex - 1, int.Parse(cell.ColumnIndex) - 1).Point.X
+                                        , this.GetPosition(intRowIndex - 1, int.Parse(cell.ColumnIndex) - 1).Point.Y + 1
+                                        , this.GetPosition(intRowIndex - 1, int.Parse(cell.ColumnIndex) - 1).Point.X
+                                        , this.GetPosition(intRowIndex - 1, int.Parse(cell.ColumnIndex) - 1).Point.Y + this.GetRowHeight(intRowIndex - 1));
+                                    break;
+                                case "Right":
+                                    graphics.DrawLine(pen1
+                                    , this.GetPosition(intRowIndex - 1, int.Parse(cell.ColumnIndex) - 1).Point.X + this.GetColumnWidth(int.Parse(cell.ColumnIndex) - 1)
+                                    , this.GetPosition(intRowIndex - 1, int.Parse(cell.ColumnIndex) - 1).Point.Y + 1
+                                    , this.GetPosition(intRowIndex - 1, int.Parse(cell.ColumnIndex) - 1).Point.X + this.GetColumnWidth(int.Parse(cell.ColumnIndex) - 1)
+                                    , this.GetPosition(intRowIndex - 1, int.Parse(cell.ColumnIndex) - 1).Point.Y + this.GetRowHeight(intRowIndex - 1));
+                                    break;
+                                default:
+                                    break;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        // Draw 
+        public async void DrawTable(Graphics graphics, dynamic dy, dynamic items, TableConfig config)
+        {
+            int intCount = 0;
+            if (items != null)
+            {
+                intCount = items.Count;
+            }
+            // 整理配置文件
+            this.OrganizeConfig(config, intCount);
+            // 绘制表格结构
+            this.DrawStructure(config, intCount);
+            // 绘制单元格
+            this.Draw(graphics, config);
+            // 绘制单元格内容
+            string title = "";
+            int itemIdex = 1;
+
+            foreach (var row in config.Rows)
+            {
+                int intRowIndex = int.Parse(row.RowIndex);
+                if (row.Is_Items)
+                {
+                    itemIdex = intRowIndex;
+                    int itemRow = 1;
+                    foreach (var it in items)
+                    {
+                        foreach (var cell in row.Cells)
+                        {
+                            int intColumIndex = int.Parse(cell.ColumnIndex);
+                            title = cell.Title;
+                            StringFormat stringFormat = GetStringFormat(cell.Alignment, cell.LineAlignment);
+                            Match match = Regex.Match(title, @"\$(.*?)\$");
+                            //需要注意title与内容混合
+                            if (match.Success)
+                            {
+                                string result = match.Groups[1].Value;
+                                if (result == "seq_no")
+                                {
+                                    title = itemRow.ToString();
+                                }
+                                else
+                                {
+                                    object o = it.GetType().GetProperty(result).GetValue(it);
+                                    string value = o == null ? "" : o.ToString();
+                                    if (value.Split(',').Length > 1)
+                                    {
+                                        string[] sp = value.Split(',');
+                                        if (sp[1] == "date")
+                                        {
+                                            var dt = DateTime.Parse(sp[0]).ToString(sp[2]);
+                                            title = dt;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        title = cell.Title.Replace("$" + result + "$", value);
+                                    }
+                                }
+                                if (cell.Merge == null)
+                                {
+                                    this.DrawTextInCell(graphics, this.GetPosition(itemIdex - 1, intColumIndex - 1), title
+                                                , CellFont(cell), Brushes.Black, 0, 0, stringFormat);
+                                }
+                                else
+                                {
+                                    //动态行合并需要考虑
+                                    if (cell.Merge[0].Contains("+"))
+                                    {
+                                        cell.Merge[0] = Calculate(cell.Merge[0].Replace("seq_no", itemRow.ToString())).ToString();
+                                    }
+                                    if (cell.Merge[2].Contains("+"))
+                                    {
+                                        cell.Merge[2] = Calculate(cell.Merge[2].Replace("seq_no", itemRow.ToString())).ToString();
+                                    }
+                                    this.DrawTextInCell(graphics, this.GetPosition(itemIdex - 1, intColumIndex - 1), title
+                                        , CellFont(cell), Brushes.Black
+                                        , int.Parse(cell.Merge[2]) - int.Parse(cell.Merge[0].Replace("seq_no", itemRow.ToString())), int.Parse(cell.Merge[3]) - int.Parse(cell.Merge[1]) + 1, stringFormat);
+                                }
+                            }
+                            else
+                            {
+                                if (cell.Merge == null)
+                                {
+                                    this.DrawTextInCell(graphics, this.GetPosition(itemIdex - 1, intColumIndex - 1), title
+                                                , CellFont(cell), Brushes.Black, 0, 0, stringFormat);
+                                }
+                                else
+                                {
+                                    this.DrawTextInCell(graphics, this.GetPosition(itemIdex - 1, intColumIndex - 1), title
+                                        , CellFont(cell), Brushes.Black
+                                        , int.Parse(cell.Merge[2]) - int.Parse(cell.Merge[0]), int.Parse(cell.Merge[3]) - int.Parse(cell.Merge[1]) + 1, stringFormat);
+                                }
+                            }
+                        }
+                        itemIdex++;
+                        itemRow++;
+                    }
+
+                }
+                else
+                {
+                    foreach (var cell in row.Cells)
+                    {
+                        int intColumIndex = int.Parse(cell.ColumnIndex);
+                        title = cell.Title;
+                        StringFormat stringFormat = GetStringFormat(cell.Alignment, cell.LineAlignment);
+                        Match match = Regex.Match(title, @"\$(.*?)\$");
+                        //需要注意title与内容混合
+                        if (match.Success)
+                        {
+                            string result = match.Groups[1].Value;
+                            var sp = result.Split(',');
+                            result = sp[0];
+                            string value = dy.GetType().GetProperty(result).GetValue(dy) == null ? "" : dy.GetType().GetProperty(result).GetValue(dy).ToString();
+
+                            if (sp.Length > 1)
+                            {
+
+                                if (sp[1] == "date")
+                                {
+                                    var dt = DateTime.Parse(value).ToString(sp[2]);
+                                    title = dt;
+                                }
+                            }
+                            else
+                            {
+                                title = cell.Title.Replace("$" + result + "$", value);
+                            }
+
+                            if (cell.Merge == null)
+                            {
+                                this.DrawTextInCell(graphics, this.GetPosition(intRowIndex - 1, intColumIndex - 1), title
+                                            , CellFont(cell), Brushes.Black, 0, 0, stringFormat);
+                            }
+                            else
+                            {
+                                this.DrawTextInCell(graphics, this.GetPosition(intRowIndex - 1, intColumIndex - 1), title
+                                    , CellFont(cell), Brushes.Black
+                                    , int.Parse(cell.Merge[2]) - int.Parse(cell.Merge[0]), int.Parse(cell.Merge[3]) - int.Parse(cell.Merge[1]) + 1, stringFormat);
+                            }
+                        }
+                        else
+                        {
+                            if (cell.Merge == null)
+                            {
+                                this.DrawTextInCell(graphics, this.GetPosition(intRowIndex - 1, intColumIndex - 1), title
+                                            , CellFont(cell), Brushes.Black, 0, 0, stringFormat);
+                            }
+                            else
+                            {
+                                this.DrawTextInCell(graphics, this.GetPosition(intRowIndex - 1, intColumIndex - 1), title
+                                    , CellFont(cell), Brushes.Black
+                                    , int.Parse(cell.Merge[2]) - int.Parse(cell.Merge[0]), int.Parse(cell.Merge[3]) - int.Parse(cell.Merge[1]) + 1, stringFormat);
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            // 绘制条码
+            foreach (var barcode in config.BarCodes)
+            {
+                Match match = Regex.Match(barcode.Tilte, @"\$(.*?)\$");
+                if (barcode.BarcodeType == "QRCODE")
+                {
+                    string result = match.Groups[1].Value;
+                    string value = dy.GetType().GetProperty(result).GetValue(dy).ToString();
+
+                    title = barcode.Tilte.Replace("$" + result + "$", value);
+
+                    if (barcode.Sizes == null)
+                    {
+                        barcode.Sizes = new Size(64, 64);
+                    }
+
+                    this.DrawQRCode(graphics, title, this.GetPosition(int.Parse(barcode.RowIndex) - 1
+                        , int.Parse(barcode.ColumnIndex) - 1), new Point(15, 5), barcode.Sizes.Value.Width, barcode.Sizes.Value.Height);
+                }
+
+                if (barcode.BarcodeType == "CODE128")
+                {
+                    string result = match.Groups[1].Value;
+                    string value = dy.GetType().GetProperty(result).GetValue(dy).ToString();
+
+                    title = barcode.Tilte.Replace("$" + result + "$", value);
+
+                    this.Draw128Code(graphics, title, this.GetPosition(int.Parse(barcode.RowIndex) - 1
+                        , int.Parse(barcode.ColumnIndex) - 1), barcode.Sizes.Value.Width
+                        , barcode.Sizes.Value.Height, new Point(2, 2));
+
+                }
+            }
+        }
+
+        private Font CellFont(TableConfig.Cell cell)
+        {
+            if (cell.Font == null)
+            {
+                return new Font("SimHei", 12);
+            }
+            // 设置字体样式
+            FontStyle style = FontStyle.Regular;
+            if (cell.Font.Bold && cell.Font.Italic)
+            {
+                style = FontStyle.Bold | FontStyle.Italic;
+            }
+            else if (cell.Font.Bold)
+            {
+                style = FontStyle.Bold;
+            }
+            else if (cell.Font.Italic)
+            {
+                style = FontStyle.Italic;
+            }
+
+            // 创建并返回 Font 对象
+            return new Font(cell.Font.Name, cell.Font.Size, style);
+        }
+
+        /// <summary>
+        /// 绘制表格结构
+        /// </summary>
+        /// <param name="config"></param>
+        /// <param name="intCount"></param>
+        public void DrawStructure(TableConfig config, int intCount)
+        {
+            for (int i = 0; i < config.RowsCount + intCount; i++)
+            {
+                var find = config.Rows.Find(x => x.RowIndex == (i + 1).ToString());
+                if (find != null)
+                {
+                    if (find.Height == null)
+                    {
+                        this.Rows.Add(new Row(35));
+                    }
+                    else
+                    {
+                        var height = find.Height;
+                        this.Rows.Add(new Row(height == null ? 35 : int.Parse(height)));
+                    }
+                }
+                else
+                {
+                    this.Rows.Add(new Row(35));
+                }
+            }
+
+            for (int i = 0; i < config.ColumnsWidths.Count; i++)
+            {
+                this.Columns.Add(new Column(config.ColumnsWidths[i]));
+            }
+
+            //为config.Rows补充动态行
+            var drow = config.Rows.Find(x => x.Is_Items);
+            if (drow != null)
+            {
+                for (int i = 0; i < intCount - 1; i++)
+                {
+                    var nrow = JsonSerializer.Serialize(drow);
+                    config.Rows.Add(JsonSerializer.Deserialize<TableConfig.Row>(nrow));
+                }
+            }
+
+            //合并
+            int itemRow = 0;
+            foreach (var item in config.Rows)
+            {
+                var merges = item.Cells.FindAll(x => x.Merge != null);
+                foreach (var merge in merges)
+                {
+                    int startRowIndex = 0;
+                    int startColumnIndex = 0;
+                    int endRowIndex = 0;
+                    int endColumnIndex = 0;
+                    if (item.Is_Items)
+                    {
+                        if (merge.Merge[0].Contains("+"))
+                        {
+                            merge.Merge[0] = Calculate(merge.Merge[0].Replace("seq_no", itemRow.ToString())).ToString();
+                        }
+                        if (merge.Merge[2].Contains("+"))
+                        {
+                            merge.Merge[2] = Calculate(merge.Merge[2].Replace("seq_no", itemRow.ToString())).ToString();
+                        }
+                        startRowIndex = int.Parse(merge.Merge[0]);
+                        endColumnIndex = int.Parse(merge.Merge[3]);
+                    }
+                    else
+                    {
+                        startRowIndex = int.Parse(merge.Merge[0]);
+                        endColumnIndex = int.Parse(merge.Merge[3]);
+                    }
+
+                    startColumnIndex = int.Parse(merge.Merge[1]);
+                    endRowIndex = int.Parse(merge.Merge[0]);
+
+                    this.MergeCell.Add(new Position(startRowIndex, startColumnIndex), new Position(endRowIndex, endColumnIndex));
+                }
+
+                if (item.Is_Items)
+                {
+                    itemRow++;
+                }
+
+            }
+
+        }
+
+
+        /// <summary>
+        /// 整理配置文件
+        /// </summary>
+        /// <param name="config"></param>
+        /// <param name="intCount"></param>
+        public async void OrganizeConfig(TableConfig config, int intCount)
+        {
+            //先将行修改为实际对应的行
+            foreach (var item in config.Rows)
+            {
+                if (item.RowIndex.Contains("Items.Count"))
+                {
+                    item.RowIndex = item.RowIndex.Replace("Items.Count", intCount.ToString());
+                    item.RowIndex = (await CSharpScript.EvaluateAsync(item.RowIndex)).ToString();
+                }
+            }
+
+            //处理合并单元格
+            foreach (var item in config.Rows)
+            {
+                //找出合并的，修改为实际的行数
+                var mergeRows = item.Cells.FindAll(x => x.Merge != null);
+                foreach (var merge in mergeRows)
+                {
+                    string strStartRowIndex = merge.Merge[0];
+                    string strendRowIndex = merge.Merge[2];
+                    if (strStartRowIndex.Contains("Items.Count"))
+                    {
+                        strStartRowIndex = strStartRowIndex.Replace("Items.Count", intCount.ToString());
+                        merge.Merge[0] = (await CSharpScript.EvaluateAsync(strStartRowIndex)).ToString();
+                    }
+                    if (strendRowIndex.Contains("Items.Count"))
+                    {
+                        strendRowIndex = strendRowIndex.Replace("Items.Count", intCount.ToString());
+                        merge.Merge[2] = (await CSharpScript.EvaluateAsync(strendRowIndex)).ToString();
+                    }
+                }
+            }
+
+            ////处理头上barcode
+            foreach (var item in config.BarCodes)
+            {
+                if (item.RowIndex.Contains("Items.Count"))
+                {
+                    var row = item.RowIndex.Replace("Items.Count", intCount.ToString());
+                    item.RowIndex = (await CSharpScript.EvaluateAsync(row)).ToString();
+                }
+            }
+        }
+
+        /// <summary>
+        /// 获取字符串格式
+        /// </summary>
+        /// <param name="alignment"></param>
+        /// <param name="lineAlignment"></param>
+        /// <returns></returns>
+        private StringFormat GetStringFormat(string alignment, string lineAlignment)
+        {
+            if (alignment == null && lineAlignment == null)
+            {
+                return new StringFormat()
+                {
+                    Alignment = StringAlignment.Center,
+                    LineAlignment = StringAlignment.Center
+                };
+            }
+            StringFormat stringFormat = new StringFormat();
+            switch (alignment)
+            {
+                case "Left":
+                    stringFormat.Alignment = StringAlignment.Near;
+                    break;
+                case "Center":
+                    stringFormat.Alignment = StringAlignment.Center;
+                    break;
+                case "Right":
+                    stringFormat.Alignment = StringAlignment.Far;
+                    break;
+            }
+            switch (lineAlignment)
+            {
+                case "Top":
+                    stringFormat.LineAlignment = StringAlignment.Near;
+                    break;
+                case "Center":
+                    stringFormat.LineAlignment = StringAlignment.Center;
+                    break;
+                case "Bottom":
+                    stringFormat.LineAlignment = StringAlignment.Far;
+                    break;
+            }
+            return stringFormat;
+        }
+
+        /// <summary>
+        /// 移除Json中的注释
+        /// </summary>
+        /// <param name="json"></param>
+        /// <returns></returns>
+        public string RemoveCommentsFromJson(string json)
+        {
+            // Pattern to match single-line comments (//...)
+            string singleLineCommentPattern = @"(//.*?$)";
+
+            // Pattern to match multi-line comments (/*...*/)
+            string multiLineCommentPattern = @"/\*[\s\S]*?\*/";
+
+            // Combine both regex patterns
+            string combinedPattern = $"{singleLineCommentPattern}|{multiLineCommentPattern}";
+
+            // Use RegexOptions.Singleline to treat the input as a single line for multiline comments
+            string result = Regex.Replace(json, combinedPattern, string.Empty, RegexOptions.Multiline);
+
+            return result;
+        }
+
+        /// <summary>
+        /// 公式计算
+        /// </summary>
+        /// <param name="formula"></param>
+        /// <returns></returns>
+        private int Calculate(string formula)
+        {
+            try
+            {
+                // 使用 DataTable 的 Compute 方法进行字符串公式计算  
+                DataTable table = new DataTable();
+                table.Columns.Add("expression", typeof(string), formula);
+                DataRow row = table.NewRow();
+                table.Rows.Add(row);
+
+                // 返回计算结果  
+                return Convert.ToInt16(row["expression"]);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"计算出错: {ex.Message}");
+                return 0;
+            }
+
+        }
+    }
+}

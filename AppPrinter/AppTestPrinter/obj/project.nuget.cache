@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "yAYz735QACo=",
+  "success": true,
+  "projectFilePath": "D:\\myproject\\1IdioSoft\\idiosoft.snaps\\printer\\AppTestPrinter\\AppTestPrinter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\truei\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.4\\microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\microsoft.codeanalysis.common\\4.11.0\\microsoft.codeanalysis.common.4.11.0.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.11.0\\microsoft.codeanalysis.csharp.4.11.0.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\microsoft.codeanalysis.csharp.scripting\\4.11.0\\microsoft.codeanalysis.csharp.scripting.4.11.0.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\microsoft.codeanalysis.scripting.common\\4.11.0\\microsoft.codeanalysis.scripting.common.4.11.0.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\system.collections.immutable\\8.0.0\\system.collections.immutable.8.0.0.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\system.drawing.common\\8.0.0\\system.drawing.common.8.0.0.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\system.reflection.metadata\\8.0.0\\system.reflection.metadata.8.0.0.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\zxing.net\\0.16.7\\zxing.net.0.16.7.nupkg.sha512",
+    "C:\\Users\\truei\\.nuget\\packages\\zxing.net.bindings.windows.compatibility\\0.16.10\\zxing.net.bindings.windows.compatibility.0.16.10.nupkg.sha512"
+  ],
+  "logs": []
+}
