@@ -211,3 +211,41 @@ https://www.otteach.cn/post/1151
 
 ### 🚀 C#网络文件传输实战：手把手教你打造工业级传输工具
 https://www.otteach.cn/post/1143
+
+
+## AppAiDeviceDiagnostics
+
+### 🤖 C# AI应用实战：用Semantic Kernel构建智能设备诊断助手
+https://www.ia2025.com/post/1070
+
+
+## AppAiIndustryNetworkMonitor
+
+### 🌐 从零构建工业网络AI监控系统：Semantic Kernel实战指南
+https://www.ia2025.com/post/1262
+
+
+
+## AppDbAiAgent
+
+### 🚀 C#打造智能数据助手：SQLite+AI让SCADA系统数据查询变得如此简单！
+https://www.ia2025.com/post/1153
+
+
+## AppProductionLineOptimizationAgent
+
+### 🏭 从零开始构建Semantic Kernel生产线优化系统：C#智能Agent开发实战
+https://www.ia2025.com/post/1156
+
+
+## AppProductionSchedulingSystem
+
+### 🚀 C#智能制造新玩法：用Semantic Kernel打造AI驱动的生产排程系统
+https://www.ia2025.com/post/831
+
+
+## AppAiIndustrialSensorAnalyzer
+
+### 🏭 用C#构建工业4.0智能传感器Agent：从数据采集到AI分析的完整解决方案
+https://www.ia2025.com/post/1309
+
